@@ -40,3 +40,15 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
 
+---
+
+### [Event 3](4.3-Event3/)
+&emsp;**Tên sự kiện:** Event Cloud Architect
+
+&emsp;**Thời gian:** 09:00, Ngày 20/06/2026
+
+&emsp;**Vai trò trong sự kiện:** Đội thi đấu (Team Lifelong Learners)
+
+&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+
+&emsp;**Mô tả ngắn gọn:** Một cuộc thi thực tế về kiến thức AWS Cloud Architecture giữa 8 đội thi, rèn luyện kỹ năng giải quyết tình huống AWS và làm việc nhóm dưới áp lực thời gian.

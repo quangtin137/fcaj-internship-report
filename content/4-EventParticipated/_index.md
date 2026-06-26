@@ -38,3 +38,16 @@ During my internship, I participated in two events. Each one was a memorable exp
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee  
+
+---
+
+### [Event 3](4.3-Event3/)
+&emsp;**Event Name:** Event Cloud Architect
+
+&emsp;**Date & Time:** 09:00, June 20, 2026
+
+&emsp;**Role:** Competitor (Team Lifelong Learners)
+
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+
+&emsp;**Brief Description:** A real-world competition on AWS Cloud Architecture knowledge among 8 teams, practicing AWS scenario solving and teamwork under time pressure.
