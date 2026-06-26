@@ -5,40 +5,39 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+Hello, my name is **Van Quang Tin**, a student at Ho Chi Minh City University of Technology - HUTECH. This website is my internship report for the **AWS FCAJ Cloud Intern** program.
 
-### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+This website is built with Hugo and uses the `hugo-theme-learn` theme. Its purpose is to present my learning process, weekly worklog, internship activities, and self-evaluation during the internship period.
 
-&emsp; **Phone Number:** 0989888999 
+### Personal Information:
+&emsp; **Full name:** Van Quang Tin
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** quangtin13072004@gmail.com
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** HUTECH - Ho Chi Minh City University of Technology
 
-&emsp; **Major:** Information Technology
+&emsp; **Internship Program:** AWS FCAJ Cloud Intern
 
-&emsp; **Class:** AWS082025
+&emsp; **Report Type:** Internship Report
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
 
-&emsp; **Internship Position:** FCJ Cloud Intern
+![Your profile picture](/images/avatar.jpg)
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+## Report Objective
 
-![Your profile picture](/images/avatar.png)
+This report summarizes my internship process, including the tasks I completed, the knowledge I gained, the activities I joined, and the lessons learned during the internship.
 
-### Report Content
+## Report Structure
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Translated Blogs](3-BlogsTranslated/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+The report includes the following sections:
+
+* **Worklog:** Weekly worklog during the internship.
+* **Proposal:** Description of the assigned task or project proposal.
+* **Blogs Translated:** Blog posts translated during the internship.
+* **Event Participated:** Events participated in during the internship.
+* **Workshop:** Workshop or practical project content.
+* **Self-evaluation:** Self-evaluation after the internship.
+* **Feedback:** Feedback and suggestions after the internship.

@@ -6,35 +6,38 @@ chapter: false
 ---
 
 # Báo cáo thực tập
-### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
 
-&emsp; **Số điện thoại:** 0989888999
+Xin chào, tôi là **Văn Quang Tín**, sinh viên Trường Đại học Công nghệ TP.HCM - HUTECH. Đây là website báo cáo thực tập của tôi trong chương trình **AWS FCAJ Cloud Intern**.
 
-&emsp; **Email:** Anguyenvan@gmail.com
+Website này được xây dựng bằng Hugo và sử dụng theme `hugo-theme-learn`, nhằm trình bày quá trình học tập, làm việc, tham gia hoạt động và tự đánh giá trong suốt kỳ thực tập.
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+### Thông tin cá nhân:
+&emsp; **Họ và tên:** Văn Quang Tín
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Email:** quangtin13072004@gmail.com
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Trường:** HUTECH - Trường Đại học Công nghệ TP.HCM
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+&emsp; **Chương trình:** AWS FCAJ Cloud Intern
 
-&emsp; **Vị trí thực tập:** FCJ Cloud Intern
+&emsp; **Loại báo cáo:** Internship Report
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến 10/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+![Ảnh đại diện của bạn](/images/avatar.jpg)
 
+## Mục tiêu báo cáo
 
+Báo cáo này được thực hiện nhằm tổng hợp lại quá trình thực tập, bao gồm các công việc đã thực hiện, kiến thức đã học, hoạt động đã tham gia và những kinh nghiệm rút ra trong quá trình tham gia chương trình thực tập.
 
-### Nội dung báo cáo
+## Cấu trúc nội dung
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Các bài blogs đã dịch](3-BlogsTranslated/)
-4.  [Các events đã tham gia](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Tự đánh giá](6-Self-evaluation/)
-7.  [Chia sẻ, đóng góp ý kiến](7-Feedback/)
+Báo cáo gồm các phần chính sau:
+
+* **Worklog:** Nhật ký công việc theo từng tuần trong quá trình thực tập.
+* **Proposal:** Mô tả đề xuất hoặc nhiệm vụ được giao trong kỳ thực tập.
+* **Blogs Translated:** Các bài blog đã dịch trong quá trình thực tập.
+* **Event Participated:** Các sự kiện đã tham gia.
+* **Workshop:** Nội dung workshop hoặc project thực tế đã thực hiện.
+* **Self-evaluation:** Phần tự đánh giá bản thân sau kỳ thực tập.
+* **Feedback:** Phản hồi và đóng góp ý kiến sau quá trình thực tập.
