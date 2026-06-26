@@ -24,7 +24,7 @@ Website này được xây dựng bằng Hugo và sử dụng theme `hugo-theme-
 
 &emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến 10/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar.jpg)
+![Ảnh đại diện của bạn](/fcaj-internship-report/images/avatar.jpg)
 
 ## Mục tiêu báo cáo
 

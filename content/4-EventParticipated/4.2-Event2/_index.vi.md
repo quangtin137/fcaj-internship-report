@@ -126,26 +126,26 @@ Sau event, tôi nhận thức sâu sắc rằng bản thân cần học không c
 
 ### Một số hình ảnh khi tham gia sự kiện
 
-![Anh Hưng chia sẻ định hướng đầu buổi](/images/4-EventParticipated/4.2-Event2/hung-opening.png)
+![Anh Hưng chia sẻ định hướng đầu buổi](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/hung-opening.png)
 *Anh Hưng mở đầu sự kiện và chia sẻ góc nhìn thực tế về thị trường việc làm trong kỷ nguyên AI.*
 
-![Anh Tịnh chia sẻ](/images/4-EventParticipated/4.2-Event2/tinh-session.png)
+![Anh Tịnh chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/tinh-session.png)
 *Anh Tịnh chia sẻ về vai trò của ngữ cảnh khi làm việc với AI.*
 
-![Anh Hải Anh chia sẻ](/images/4-EventParticipated/4.2-Event2/haianh-session.png)
+![Anh Hải Anh chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/haianh-session.png)
 *Anh Hải Anh giới thiệu về Friendly AI Assistant và Amazon Quick.*
 
-![Anh Thịnh chia sẻ](/images/4-EventParticipated/4.2-Event2/thinh-session.png)
+![Anh Thịnh chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/thinh-session.png)
 *Anh Thịnh trình bày về CloudFront như một nền tảng từ edge đến origin.*
 
-![Team VIB chia sẻ](/images/4-EventParticipated/4.2-Event2/teamVIB-session.png)
+![Team VIB chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/teamVIB-session.png)
 *Team VIB chia sẻ hành trình xây dựng UTMorpho trong cuộc thi LotusHacks 2026.*
 
-![Anh Đức chia sẻ](/images/4-EventParticipated/4.2-Event2/duc-session.png)
+![Anh Đức chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/duc-session.png)
 *Anh Đức giải thích về tính không xác định của LLM ngay cả khi sử dụng các thiết lập deterministic.*
 
-![Chị Vy chia sẻ](/images/4-EventParticipated/4.2-Event2/vy-session.png)
+![Chị Vy chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/vy-session.png)
 *Chị Vy trình bày về hệ thống multi-agent cấp doanh nghiệp cho bài toán đánh giá tín dụng startup.*
 
-![Ảnh chụp tập thể tại AWS Vietnam Community Day](/images/4-EventParticipated/4.2-Event2/group_photo.png)
+![Ảnh chụp tập thể tại AWS Vietnam Community Day](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/group_photo.png)
 *Ảnh chụp tập thể tại sự kiện AWS Vietnam Community Day.*

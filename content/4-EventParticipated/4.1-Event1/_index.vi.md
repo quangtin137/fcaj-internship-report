@@ -93,17 +93,17 @@ Thông qua buổi chia sẻ, tôi nhận ra rằng việc học cloud hay bất 
 
 ### Một số hình ảnh khi tham gia sự kiện
 
-![Mr. Long Huynh sharing session](/images/4-EventParticipated/4.1-Event1/long-session.png)
+![Mr. Long Huynh sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/long-session.png)
 *Anh Long chia sẻ về thói quen học tập và động lực.*
 
-![Mr. Thinh Nguyen sharing session](/images/4-EventParticipated/4.1-Event1/thinh-session.png)
+![Mr. Thinh Nguyen sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/thinh-session.png)
 *Anh Thịnh trình bày về Automated Prompt Engineering và dự án Proptimizer.*
 
-![Mr. Khang Nguyen sharing session](/images/4-EventParticipated/4.1-Event1/khang-session.png)
+![Mr. Khang Nguyen sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/khang-session.png)
 *Anh Khang chia sẻ về kỹ năng và mindset cho fresher trong kỷ nguyên AI.*
 
-![Ms. Thao sharing session](/images/4-EventParticipated/4.1-Event1/thao-session.png)
+![Ms. Thao sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/thao-session.png)
 *Chị Thảo giới thiệu phương pháp BMAD trong phát triển phần mềm với AI.*
 
-![Group photo at FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/group-photo.png)
+![Group photo at FCAJ Community Day](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/group-photo.png)
 *Ảnh chụp tập thể tại sự kiện FCAJ Community Day.*

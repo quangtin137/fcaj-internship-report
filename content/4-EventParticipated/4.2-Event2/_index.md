@@ -126,26 +126,26 @@ After the event, I became deeply aware of the need for continuous learning. That
 
 ### Some event photos
 
-![Mr. Hung Nguyen sharing opening orientation](/images/4-EventParticipated/4.2-Event2/hung-opening.png)
+![Mr. Hung Nguyen sharing opening orientation](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/hung-opening.png)
 *Mr. Hung Nguyen opening the event and sharing practical perspectives on the job market in the AI era.*
 
-![Mr. Tinh sharing](/images/4-EventParticipated/4.2-Event2/tinh-session.png)
+![Mr. Tinh sharing](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/tinh-session.png)
 *Mr. Tinh sharing about the role of context when working with AI.*
 
-![Mr. Anh Pham sharing](/images/4-EventParticipated/4.2-Event2/haianh-session.png)
+![Mr. Anh Pham sharing](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/haianh-session.png)
 *Mr. Anh Pham introducing Friendly AI Assistant and Amazon Quick.*
 
-![Mr. Thinh Nguyen sharing](/images/4-EventParticipated/4.2-Event2/thinh-session.png)
+![Mr. Thinh Nguyen sharing](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/thinh-session.png)
 *Mr. Thinh Nguyen presenting CloudFront as a foundation from edge to origin.*
 
-![Team VIB sharing](/images/4-EventParticipated/4.2-Event2/teamVIB-session.png)
+![Team VIB sharing](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/teamVIB-session.png)
 *Team VIB sharing the journey of building UTMorpho during LotusHacks 2026.*
 
-![Mr. Duc Dao sharing](/images/4-EventParticipated/4.2-Event2/duc-session.png)
+![Mr. Duc Dao sharing](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/duc-session.png)
 *Mr. Duc Dao explaining the non-determinism of seemingly deterministic LLM settings.*
 
-![Ms. Vy Lam sharing](/images/4-EventParticipated/4.2-Event2/vy-session.png)
+![Ms. Vy Lam sharing](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/vy-session.png)
 *Ms. Vy Lam presenting an enterprise-grade multi-agent system for the startup credit scoring problem.*
 
-![Group photo at AWS Vietnam Community Day](/images/4-EventParticipated/4.2-Event2/group_photo.png)
+![Group photo at AWS Vietnam Community Day](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/group_photo.png)
 *Group photo at AWS Vietnam Community Day.*

@@ -24,7 +24,7 @@ This website is built with Hugo and uses the `hugo-theme-learn` theme. Its purpo
 
 &emsp; **Internship Duration:** From 17/04/2026 to 10/07/2026
 
-![Your profile picture](/images/avatar.jpg)
+![Your profile picture](/fcaj-internship-report/images/avatar.jpg)
 
 ## Report Objective
 

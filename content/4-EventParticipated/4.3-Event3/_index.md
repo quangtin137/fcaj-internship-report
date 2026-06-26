@@ -92,32 +92,32 @@ Stopping at 4th place left a bit of regret, but that exactly helped me clearly s
 
 ### Some event photos
 
-![Event Cloud Architect bracket](/images/4-EventParticipated/4.3-Event3/bang-dau.jpg)
+![Event Cloud Architect bracket](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/bang-dau.jpg)
 *The competition bracket of Event Cloud Architect with 8 participating teams.*
 
-![Team Lifelong Learners](/images/4-EventParticipated/4.3-Event3/lifelong-learners.jpg)
+![Team Lifelong Learners](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/lifelong-learners.jpg)
 *My team, Lifelong Learners, at Event Cloud Architect.*
 
-![Team KLKAT](/images/4-EventParticipated/4.3-Event3/klkat.jpg)
+![Team KLKAT](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/klkat.jpg)
 *Team KLKAT participating in Event Cloud Architect.*
 
-![Team PrimeOps](/images/4-EventParticipated/4.3-Event3/primeops.jpg)
+![Team PrimeOps](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/primeops.jpg)
 *Team PrimeOps participating in Event Cloud Architect.*
 
-![Team newbie](/images/4-EventParticipated/4.3-Event3/team-newbie.jpg)
+![Team newbie](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/team-newbie.jpg)
 *Team newbie participating in Event Cloud Architect.*
 
-![Team Young Flame IT](/images/4-EventParticipated/4.3-Event3/young-flame-it.jpg)
+![Team Young Flame IT](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/young-flame-it.jpg)
 *Team Young Flame IT participating in Event Cloud Architect.*
 
-![Team Ngu Dai Hiep](/images/4-EventParticipated/4.3-Event3/ngu-dai-hiep.jpg)
+![Team Ngu Dai Hiep](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/ngu-dai-hiep.jpg)
 *Team Ngũ đại hiệp participating in Event Cloud Architect.*
 
-![Team Loser](/images/4-EventParticipated/4.3-Event3/loser.jpg)
+![Team Loser](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/loser.jpg)
 *Team Loser participating in Event Cloud Architect.*
 
-![Team Gap Phai Thang Lieu](/images/4-EventParticipated/4.3-Event3/gap-phai-thang-lieu.jpg)
+![Team Gap Phai Thang Lieu](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/gap-phai-thang-lieu.jpg)
 *Team Gặp phải thằng liều participating in Event Cloud Architect.*
 
-![Group photo at Event Cloud Architect](/images/4-EventParticipated/4.3-Event3/group-photo.jpg)
+![Group photo at Event Cloud Architect](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/group-photo.jpg)
 *Group photo at Event Cloud Architect.*

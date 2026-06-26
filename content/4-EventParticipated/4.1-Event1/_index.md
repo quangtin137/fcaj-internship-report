@@ -93,17 +93,17 @@ Through these sharing sessions, I realized that learning cloud computing or any 
 
 ### Some event photos
 
-![Mr. Long Huynh sharing session](/images/4-EventParticipated/4.1-Event1/long-session.png)
+![Mr. Long Huynh sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/long-session.png)
 *Mr. Long Huynh sharing about learning habits and motivation.*
 
-![Mr. Thinh Nguyen sharing session](/images/4-EventParticipated/4.1-Event1/thinh-session.png)
+![Mr. Thinh Nguyen sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/thinh-session.png)
 *Mr. Thinh Nguyen presenting Automated Prompt Engineering and Proptimizer.*
 
-![Mr. Khang Nguyen sharing session](/images/4-EventParticipated/4.1-Event1/khang-session.png)
+![Mr. Khang Nguyen sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/khang-session.png)
 *Mr. Khang Nguyen sharing about skills and mindset for freshers in the AI era.*
 
-![Ms. Thao sharing session](/images/4-EventParticipated/4.1-Event1/thao-session.png)
+![Ms. Thao sharing session](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/thao-session.png)
 *Ms. Thao introducing the BMAD Method for AI-assisted software development.*
 
-![Group photo at FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/group-photo.png)
+![Group photo at FCAJ Community Day](/fcaj-internship-report/images/4-EventParticipated/4.1-Event1/group-photo.png)
 *Group photo at FCAJ Community Day.*

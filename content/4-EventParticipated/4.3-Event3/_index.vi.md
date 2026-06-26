@@ -92,32 +92,32 @@ Việc dừng ở hạng 4 để lại một chút tiếc nuối, nhưng chính 
 
 ### Một số hình ảnh khi tham gia sự kiện
 
-![Bảng đấu Event Cloud Architect](/images/4-EventParticipated/4.3-Event3/bang-dau.jpg)
+![Bảng đấu Event Cloud Architect](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/bang-dau.jpg)
 *Bảng đấu của Event Cloud Architect với 8 đội tham gia.*
 
-![Nhóm Lifelong Learners](/images/4-EventParticipated/4.3-Event3/lifelong-learners.jpg)
+![Nhóm Lifelong Learners](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/lifelong-learners.jpg)
 *Nhóm Lifelong Learners của tôi tại Event Cloud Architect.*
 
-![Đội KLKAT](/images/4-EventParticipated/4.3-Event3/klkat.jpg)
+![Đội KLKAT](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/klkat.jpg)
 *Đội KLKAT tham gia Event Cloud Architect.*
 
-![Đội PrimeOps](/images/4-EventParticipated/4.3-Event3/primeops.jpg)
+![Đội PrimeOps](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/primeops.jpg)
 *Đội PrimeOps tham gia Event Cloud Architect.*
 
-![Đội Team newbie](/images/4-EventParticipated/4.3-Event3/team-newbie.jpg)
+![Đội Team newbie](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/team-newbie.jpg)
 *Đội Team newbie tham gia Event Cloud Architect.*
 
-![Đội Young Flame IT](/images/4-EventParticipated/4.3-Event3/young-flame-it.jpg)
+![Đội Young Flame IT](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/young-flame-it.jpg)
 *Đội Young Flame IT tham gia Event Cloud Architect.*
 
-![Đội Ngũ đại hiệp](/images/4-EventParticipated/4.3-Event3/ngu-dai-hiep.jpg)
+![Đội Ngũ đại hiệp](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/ngu-dai-hiep.jpg)
 *Đội Ngũ đại hiệp tham gia Event Cloud Architect.*
 
-![Đội Loser](/images/4-EventParticipated/4.3-Event3/loser.jpg)
+![Đội Loser](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/loser.jpg)
 *Đội Loser tham gia Event Cloud Architect.*
 
-![Đội Gặp phải thằng liều](/images/4-EventParticipated/4.3-Event3/gap-phai-thang-lieu.jpg)
+![Đội Gặp phải thằng liều](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/gap-phai-thang-lieu.jpg)
 *Đội Gặp phải thằng liều tham gia Event Cloud Architect.*
 
-![Ảnh chụp tập thể tại Event Cloud Architect](/images/4-EventParticipated/4.3-Event3/group-photo.jpg)
+![Ảnh chụp tập thể tại Event Cloud Architect](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/group-photo.jpg)
 *Ảnh chụp tập thể tại Event Cloud Architect.*
