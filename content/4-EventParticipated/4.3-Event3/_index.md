@@ -92,29 +92,32 @@ Stopping at 4th place left a bit of regret, but that exactly helped me clearly s
 
 ### Some event photos
 
-![Team Lifelong Learners](/images/4-EventParticipated/4.3-Event3/Team_bon_toi.JPG)
-*My team Lifelong Learners at Event Cloud Architect.*
+![Event Cloud Architect bracket](/images/4-EventParticipated/4.3-Event3/bang-dau.jpg)
+*The competition bracket of Event Cloud Architect with 8 participating teams.*
 
-![Team 1](/images/4-EventParticipated/4.3-Event3/Team1.JPG)
-*A competing team at Event Cloud Architect.*
+![Team Lifelong Learners](/images/4-EventParticipated/4.3-Event3/lifelong-learners.jpg)
+*My team, Lifelong Learners, at Event Cloud Architect.*
 
-![Team 2](/images/4-EventParticipated/4.3-Event3/Team2.JPG)
-*A competing team at Event Cloud Architect.*
+![Team KLKAT](/images/4-EventParticipated/4.3-Event3/klkat.jpg)
+*Team KLKAT participating in Event Cloud Architect.*
 
-![Team 3](/images/4-EventParticipated/4.3-Event3/Team3.JPG)
-*A competing team at Event Cloud Architect.*
+![Team PrimeOps](/images/4-EventParticipated/4.3-Event3/primeops.jpg)
+*Team PrimeOps participating in Event Cloud Architect.*
 
-![Team 4](/images/4-EventParticipated/4.3-Event3/Team4.JPG)
-*A competing team at Event Cloud Architect.*
+![Team newbie](/images/4-EventParticipated/4.3-Event3/team-newbie.jpg)
+*Team newbie participating in Event Cloud Architect.*
 
-![Team 5](/images/4-EventParticipated/4.3-Event3/Team5.JPG)
-*A competing team at Event Cloud Architect.*
+![Team Young Flame IT](/images/4-EventParticipated/4.3-Event3/young-flame-it.jpg)
+*Team Young Flame IT participating in Event Cloud Architect.*
 
-![Team 6](/images/4-EventParticipated/4.3-Event3/Team6.JPG)
-*A competing team at Event Cloud Architect.*
+![Team Ngu Dai Hiep](/images/4-EventParticipated/4.3-Event3/ngu-dai-hiep.jpg)
+*Team Ngũ đại hiệp participating in Event Cloud Architect.*
 
-![Team 7](/images/4-EventParticipated/4.3-Event3/Team7.JPG)
-*A competing team at Event Cloud Architect.*
+![Team Loser](/images/4-EventParticipated/4.3-Event3/loser.jpg)
+*Team Loser participating in Event Cloud Architect.*
 
-![Group photo at Event Cloud Architect](/images/4-EventParticipated/4.3-Event3/group-photo.JPG)
+![Team Gap Phai Thang Lieu](/images/4-EventParticipated/4.3-Event3/gap-phai-thang-lieu.jpg)
+*Team Gặp phải thằng liều participating in Event Cloud Architect.*
+
+![Group photo at Event Cloud Architect](/images/4-EventParticipated/4.3-Event3/group-photo.jpg)
 *Group photo at Event Cloud Architect.*
