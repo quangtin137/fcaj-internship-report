@@ -24,7 +24,7 @@ During my internship, I participated in two events. Each one was a memorable exp
 
 &emsp;**Date & Time:** 09:00, May 09, 2026  
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** 26th Floor, Bitexco Financial Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee  
 
@@ -35,7 +35,7 @@ During my internship, I participated in two events. Each one was a memorable exp
 
 &emsp;**Date & Time:** 09:00, May 23, 2026  
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** 26th Floor, Bitexco Financial Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee  
 
@@ -48,6 +48,20 @@ During my internship, I participated in two events. Each one was a memorable exp
 
 &emsp;**Role:** Competitor (Team Lifelong Learners)
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+&emsp;**Location:** 26th Floor, Bitexco Financial Tower, 02 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
 
 &emsp;**Brief Description:** A real-world competition on AWS Cloud Architecture knowledge among 8 teams, practicing AWS scenario solving and teamwork under time pressure.
+
+---
+
+### [Event 4](4.4-Event4/)
+&emsp;**Event Name:** FCAJ Community Day - Data Driven, AI Risen
+
+&emsp;**Date & Time:** 09:00, June 27, 2026
+
+&emsp;**Location:** 26th & 36th Floor, Bitexco Financial Tower, 2 Hai Trieu Street, Sai Gon Ward, Ho Chi Minh City
+
+&emsp;**Role:** Attendee
+
+&emsp;**Brief Description:** A Community Day about AI-driven operations, voice agents, DevOps agents, workforce planning, and secure MCP connectivity.
+
