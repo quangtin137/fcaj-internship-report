@@ -16,6 +16,19 @@ pre: " <b> 4.2. </b> "
 * Rút ra bài học cho quá trình internship, học AWS và phát triển project cá nhân/nhóm.
 * Kết nối với cộng đồng kỹ thuật và hiểu rõ hơn nhu cầu thực tế của thị trường trong kỷ nguyên AI.
 
+### Thông Tin Chương Trình
+
+* **8:30 - 9:00 AM:** Ổn định chỗ ngồi tại tầng 36
+* **09:00 - 09:30 AM:** Context Is Everything: Making AI Actually Work for You
+* **09:30 - 10:00 AM:** 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
+* **10:00 - 10:40 AM:** From Edge To Origin: CloudFront as Your Foundation
+* **10:40 - 10:55 AM:** Friendly AI Assistant with Amazon Quick
+* **10:55 - 11:00 AM:** Break
+* **11:00 - 11:30 AM:** Non-Determinism of "Deterministic" LLM Settings
+* **11:30 - 12:00 PM:** Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
+
+Timeline cho thấy Event 2 được thiết kế như một chuỗi nội dung liên tục, bắt đầu từ cách làm việc hiệu quả với AI thông qua context, sau đó mở rộng sang xây dựng sản phẩm trong hackathon, kiến trúc CloudFront, AI assistant, đặc tính không xác định của LLM và cuối cùng là hệ thống multi-agent ở quy mô doanh nghiệp.
+
 ### Phần Định Hướng Mở Đầu
 
 #### Anh Hưng - Chia sẻ định hướng đầu buổi
@@ -28,12 +41,12 @@ Bên cạnh đó, các kỹ năng như tiếng Anh, kỹ năng mềm, networking
 
 ### Danh Sách Diễn Giả
 
-* **Anh Tịnh** - Platform Engineer, GoTymeX - *Ngữ cảnh là tất cả: Để AI thực sự mang lại hiệu quả cho bạn*
-* **Anh Hải Anh** - AWS Community Builder, G-AsiaPacific Vietnam - *Trợ lý AI thân thiện / Amazon Quick*
-* **Anh Thịnh** - DevOps/Cloud Engineer, FCAJ - *Từ edge đến origin: CloudFront như một nền tảng vững chắc*
-* **Team VIB** - Nhóm UTMorpho, LotusHacks 2026 - *36 giờ với LotusHacks: Xây dựng UTMorpho từ ý tưởng đến thực tế*
-* **Anh Đức** - Solution Architect, Cloud Kinetics - *Tính không xác định của các thiết lập "deterministic" trong LLM*
-* **Chị Vy** - Senior Business Systems Analyst, VPBank - *Hệ thống Multi-Agent cấp doanh nghiệp: Trường hợp đánh giá tín dụng Startup*
+* **Anh Tịnh Trương** - Platform Engineer, GoTymeX - *Context Is Everything: Making AI Actually Work for You*
+* **Chị Thảo Nguyen, Chị Mai Nguyen, Chị Uyen Le** - GenAI Engineers, VIB - *36 hrs with LotusHacks – Building UTMorpho from Idea to Reality*
+* **Anh Thịnh Nguyen** - DevOps Engineer, FCAJ - *From Edge To Origin: CloudFront as Your Foundation*
+* **Anh Pham** - Cloud Consultant, G-AsiaPacific Vietnam - *Friendly AI Assistant with Amazon Quick*
+* **Anh Đức Dao** - Solutions Architect, Cloud Kinetics - *Non-Determinism of "Deterministic" LLM Settings*
+* **Chị Vy Lam** - Senior Business Systems Analyst, VPBank - *Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring*
 
 ### Nội Dung Nổi Bật
 
@@ -41,7 +54,7 @@ Bên cạnh đó, các kỹ năng như tiếng Anh, kỹ năng mềm, networking
 
 Bối cảnh AI đang làm thay đổi căn bản cách thức phát triển phần mềm và cấu trúc thị trường việc làm. Việc này đòi hỏi sinh viên/intern không chỉ có kiến thức kỹ thuật mà còn phải am hiểu business domain và có khả năng xây dựng sản phẩm thực tế. Việc trì hoãn học tập và thiếu chủ động trang bị năng lực toàn diện sẽ khiến sinh viên khó cạnh tranh hơn trên thị trường.
 
-#### Anh Tịnh - Ngữ cảnh là tất cả: Để AI thực sự mang lại hiệu quả cho bạn
+#### Anh Tịnh Trương - Context Is Everything: Making AI Actually Work for You
 
 Trong bài chia sẻ của mình, anh Tịnh nhấn mạnh rằng context (ngữ cảnh) chính là yếu tố sống còn khi làm việc với AI. Mặc dù AI sở hữu lượng kiến thức khổng lồ, nhưng nếu không được cung cấp ngữ cảnh cụ thể về mục tiêu, đối tượng người dùng, project, công ty hoặc quy trình làm việc, kết quả trả về sẽ khó đáp ứng đúng nhu cầu. 
 
@@ -49,15 +62,15 @@ Anh khuyên không nên gom quá nhiều chủ đề khác nhau vào cùng một
 
 Speaker cũng cảnh báo về hội chứng "internet puller" — thói quen thấy tool, rule hay plugin nào hay cũng gom hết vào mà không review lại xem có thực sự phù hợp với project hay không. Anh cũng gợi mở thêm về các khái niệm như AI mindset, AI adoption và xây dựng second brain. Bài học dành cho intern: Sử dụng AI hiệu quả không phải là viết một prompt thật dài, mà là nghệ thuật cung cấp đúng ngữ cảnh, xác định đúng mục tiêu và kiểm soát lượng thông tin đầu vào một cách thông minh.
 
-#### Anh Hải Anh - Trợ lý AI thân thiện / Amazon Quick
+#### Team VIB (Chị Thảo Nguyen, Chị Mai Nguyen, Chị Uyen Le) - 36 giờ với LotusHacks: Xây dựng UTMorpho từ ý tưởng đến thực tế
 
-Phần chia sẻ của anh Hải Anh tập trung vào việc giới thiệu Amazon Quick — một AI assistant cực kỳ thân thiện với người dùng. Các AI assistant giúp giảm thiểu đáng kể thời gian xử lý các tác vụ lặp đi lặp lại như tổng hợp dữ liệu, phân tích file, tạo dashboard, tóm tắt meeting và đề xuất next steps.
+Nhóm UTMorpho (Team VIB) đã chia sẻ hành trình tham gia cuộc thi LotusHacks 2026 và quá trình xây dựng dự án UTMorpho chỉ trong vỏn vẹn 36 giờ. Ý tưởng về UTMorpho bắt nguồn từ một nhu cầu rất thực tế: khi dùng AI để generate UI, người lập trình thường muốn chỉnh sửa trực tiếp trên giao diện thay vì phải điều chỉnh prompt nhiều lần.
 
-Amazon Quick nổi bật nhờ khả năng tích hợp linh hoạt với hệ sinh thái của các bên thứ ba như Microsoft, Google, hệ thống email, calendar, cùng các công cụ team collaboration. Anh giải thích rõ rằng "Agent" chính là sự kết hợp giữa bộ não của LLM và các action/function để thực thi các hành động thực tế, chẳng hạn như gửi email tự động hay phân tích dữ liệu trực tiếp.
+Nhóm đã dành thời gian brainstorm và quyết định tập trung vào việc giải quyết một problem thực tế thay vì theo đuổi những ý tưởng quá vĩ mô. Về kiến trúc, project áp dụng một hệ thống các agent để xử lý input hình ảnh, phân tích layout, tạo ra các JSON/layer, tự động sinh HTML/CSS và hỗ trợ chỉnh sửa UI trực quan.
 
-Ở góc nhìn của người dùng, anh nhấn mạnh rằng một công cụ AI tốt phải thực sự gần gũi, dễ sử dụng và giải quyết triệt để nhu cầu thực tế của end user. Bài học cho intern là: khi thiết kế và xây dựng một AI assistant, không chỉ tập trung vào phần kỹ thuật, mà phải ưu tiên hàng đầu đến workflow thực tế và trải nghiệm của người dùng.
+Dự án có các tính năng chính bao gồm: upload image/template, generate UI, xem source code, chỉnh sửa component trực tiếp, lưu lịch sử chỉnh sửa và xuất public link để review. Đội ngũ cũng chia sẻ về những challenge gặp phải như: hết token, tình trạng AI over-generation, áp lực cạn kiệt thời gian khi gần deadline, và phải chuẩn bị demo/video/pitch trong trạng thái mệt mỏi. Bài học quý giá từ cuộc thi là kỹ năng quản lý thời gian, biết chọn lọc và tập trung vào các core feature, phân chia công việc theo thế mạnh từng thành viên, duy trì sức khỏe và phát huy sức mạnh làm việc nhóm hiệu quả.
 
-#### Anh Thịnh - Từ edge đến origin: CloudFront như một nền tảng vững chắc
+#### Anh Thịnh Nguyen - Từ Edge Đến Origin: CloudFront như một nền tảng vững chắc
 
 Anh Thịnh đã mang đến một góc nhìn sâu sắc hơn về Amazon CloudFront. Thay vì chỉ xem CloudFront như một Content Delivery Network (CDN) thông thường, anh chỉ ra rằng đây thực sự là một lớp foundation vững chắc cho performance, security và reliability của các web application.
 
@@ -66,15 +79,15 @@ Bài thuyết trình trình bày về cơ chế pricing mới của CloudFront c
 Về mặt bảo mật và độ tin cậy, CloudFront đóng vai trò bảo vệ hệ thống trước các cuộc tấn công DDoS/volumetric attack thông qua việc tích hợp sâu với AWS WAF và Shield, từ đó giúp giảm tải cho origin. Các tính năng kỹ thuật nâng cao được nhắc đến gồm: caching nhiều tầng, HTTP/3, TCP handshake optimization, content compression, HTTPS/TLS, mTLS, VPC origin, block public access, geo restriction, signed URL/cookie, custom error page và origin failover. 
 Bài học dành cho intern: Khi học AWS, hãy nhìn nhận CloudFront vượt xa khái niệm CDN đơn thuần, đây là một nền tảng cốt lõi giúp tối ưu hóa chi phí, hiệu năng, bảo mật và độ tin cậy cho toàn bộ kiến trúc.
 
-#### Team VIB - 36 giờ với LotusHacks: Xây dựng UTMorpho từ ý tưởng đến thực tế
+#### Anh Pham - Trợ lý AI thân thiện với Amazon Quick
 
-Nhóm UTMorpho (Team VIB) đã chia sẻ hành trình tham gia cuộc thi LotusHacks 2026 và quá trình xây dựng dự án UTMorpho chỉ trong vỏn vẹn 36 giờ. Ý tưởng về UTMorpho bắt nguồn từ một nhu cầu rất thực tế: khi dùng AI để generate UI, người lập trình thường muốn chỉnh sửa trực tiếp trên giao diện thay vì phải điều chỉnh prompt nhiều lần.
+Phần chia sẻ của anh Pham tập trung vào việc giới thiệu Amazon Quick — một AI assistant cực kỳ thân thiện với người dùng. Các AI assistant giúp giảm thiểu đáng kể thời gian xử lý các tác vụ lặp đi lặp lại như tổng hợp dữ liệu, phân tích file, tạo dashboard, tóm tắt meeting và đề xuất next steps.
 
-Nhóm đã dành thời gian brainstorm và quyết định tập trung vào việc giải quyết một problem thực tế thay vì theo đuổi những ý tưởng quá vĩ mô. Về kiến trúc, project áp dụng một hệ thống các agent để xử lý input hình ảnh, phân tích layout, tạo ra các JSON/layer, tự động sinh HTML/CSS và hỗ trợ chỉnh sửa UI trực quan.
+Amazon Quick nổi bật nhờ khả năng tích hợp linh hoạt với hệ sinh thái của các bên thứ ba như Microsoft, Google, hệ thống email, calendar, cùng các công cụ team collaboration. Anh giải thích rõ rằng "Agent" chính là sự kết hợp giữa bộ não của LLM và các action/function để thực thi các hành động thực tế, chẳng hạn như gửi email tự động hay phân tích dữ liệu trực tiếp.
 
-Dự án có các tính năng chính bao gồm: upload image/template, generate UI, xem source code, chỉnh sửa component trực tiếp, lưu lịch sử chỉnh sửa và xuất public link để review. Đội ngũ cũng chia sẻ về những challenge gặp phải như: hết token, tình trạng AI over-generation, áp lực cạn kiệt thời gian khi gần deadline, và phải chuẩn bị demo/video/pitch trong trạng thái mệt mỏi. Bài học quý giá từ cuộc thi là kỹ năng quản lý thời gian, biết chọn lọc và tập trung vào các core feature, phân chia công việc theo thế mạnh từng thành viên, duy trì sức khỏe và phát huy sức mạnh làm việc nhóm hiệu quả.
+Ở góc nhìn của người dùng, anh nhấn mạnh rằng một công cụ AI tốt phải thực sự gần gũi, dễ sử dụng và giải quyết triệt để nhu cầu thực tế của end user. Bài học cho intern là: khi thiết kế và xây dựng một AI assistant, không chỉ tập trung vào phần kỹ thuật, mà phải ưu tiên hàng đầu đến workflow thực tế và trải nghiệm của người dùng.
 
-#### Anh Đức - Tính không xác định của các thiết lập "deterministic" trong LLM
+#### Anh Đức Dao - Tính không xác định của các thiết lập "deterministic" trong LLM
 
 Anh Đức đã giải mã khái niệm rất quan trọng: tính bất định (Non-Determinism) của LLM. LLM bản chất là các probabilistic engine, sinh ra token dựa trên xác suất chứ không hoàn toàn deterministic. Mặc dù tham số Temperature thường được dùng để điều chỉnh randomness/creativity, và temperature thấp (hoặc bằng 0) giúp output ổn định hơn, nhưng nó không hề bảo đảm kết quả sẽ hoàn toàn giống nhau 100%.
 
@@ -83,7 +96,7 @@ Ngay cả khi đặt `temperature = 0`, sự khác biệt về output vẫn có 
 Các chiến lược giảm thiểu rủi ro bao gồm: chạy prompt nhiều lần và chọn câu trả lời chung, self-host model nếu yêu cầu mức độ kiểm soát cao, sử dụng JSON mode/structured output, thiết kế downstream service đủ robust để handle các output bị lệch format, và test nhiều trường hợp. 
 Bài học: Khi triển khai LLM lên môi trường production, không nên giả định rằng output sẽ luôn giống nhau; hệ thống cần phải có logging, testing, monitoring và được thiết kế để chịu được các variation.
 
-#### Chị Vy - Hệ thống Multi-Agent cấp doanh nghiệp: Trường hợp đánh giá tín dụng Startup
+#### Chị Vy Lam - Hệ thống Multi-Agent cấp doanh nghiệp: Trường hợp đánh giá tín dụng Startup
 
 Chị Vy đã có bài chia sẻ ấn tượng về việc thiết kế hệ thống multi-agent ở mức enterprise, thông qua case study đánh giá tín dụng cho startup. Bài toán nghiệp vụ là: startup thường thiếu báo cáo tài chính dài hạn, credit history hay tài sản thế chấp, nhưng lại sở hữu những dữ liệu giá trị khác như traction, team, market và intellectual property.
 
@@ -98,9 +111,9 @@ Bài học cho intern: AI system trong doanh nghiệp không chỉ là demo, mà
 
 * **Thị trường việc làm đang thay đổi:** Sinh viên/intern cần chuẩn bị tốt hơn nền tảng kỹ thuật và kỹ năng mềm trong thời đại AI.
 * **Context là cốt lõi:** Khi làm việc với AI, việc định hình và kiểm soát context quyết định chất lượng đầu ra.
-* **AI assistant và workflow thực tế:** Các trợ lý ảo giúp tăng hiệu suất làm việc và học tập, đặc biệt trong hệ sinh thái AWS.
-* **Tầm quan trọng của CloudFront:** Không chỉ là CDN, CloudFront đóng vai trò quan trọng trong kiến trúc phân phối nội dung, đồng thời hỗ trợ cost control, security và reliability.
 * **Kinh nghiệm từ Hackathon:** Giúp rèn luyện tinh thần teamwork, tốc độ triển khai, tư duy sản phẩm nhạy bén và khả năng chọn feature cốt lõi.
+* **Tầm quan trọng của CloudFront:** Không chỉ là CDN, CloudFront đóng vai trò quan trọng trong kiến trúc phân phối nội dung, đồng thời hỗ trợ cost control, security và reliability.
+* **AI assistant và workflow thực tế:** Các trợ lý ảo giúp tăng hiệu suất làm việc và học tập, đặc biệt trong hệ sinh thái AWS.
 * **Đặc tính Non-deterministic của LLM:** LLM không hoàn toàn ổn định; cần kiểm thử, logging, monitoring và thiết kế hệ thống chịu được variation.
 * **Multi-agent System:** Giải quyết các bài toán enterprise phức tạp, nhưng yêu cầu thiết kế có kiểm soát, guardrails và gắn liền với business value.
 
@@ -108,15 +121,15 @@ Bài học cho intern: AI system trong doanh nghiệp không chỉ là demo, mà
 
 * Chủ động hơn trong quá trình học, tránh trì hoãn và tập trung vào việc tạo ra sản phẩm thực tế thay vì chỉ có demo.
 * Áp dụng cách cung cấp context rõ ràng hơn khi dùng AI để học AWS, viết report, debug lỗi hoặc phân tích tài liệu.
-* Sử dụng tư duy AI assistant để tăng hiệu suất học tập và xử lý technical tasks hàng ngày.
-* Hiểu rõ hơn vai trò của CloudFront trong hệ thống web/cloud và liên hệ với các kiến trúc AWS đã học.
 * Khi làm project nhóm, học từ cách Team VIB biến ý tưởng thành sản phẩm trong thời gian ngắn và biết cách tập trung vào các feature cốt lõi.
+* Hiểu rõ hơn vai trò của CloudFront trong hệ thống web/cloud và liên hệ với các kiến trúc AWS đã học.
+* Sử dụng tư duy AI assistant để tăng hiệu suất học tập và xử lý technical tasks hàng ngày.
 * Khi dùng LLM, không giả định output luôn ổn định; luôn cần kiểm tra, so sánh, ghi nhận log và đánh giá kết quả.
 * Khi tìm hiểu multi-agent system, cần quan tâm đến workflow, dữ liệu, kiểm soát rủi ro, security, compliance và khả năng áp dụng trong môi trường doanh nghiệp.
 
 ### Trải nghiệm trong event
 
-Sự kiện AWS Vietnam Community Day đã giúp tôi tiếp cận với nhiều chủ đề chuyên sâu và thiết thực hơn về cả AI và hệ sinh thái AWS. Tôi thực sự ấn tượng với sự đa dạng của các topic trong buổi event: từ định hướng thị trường việc làm, context engineering, AI assistant, kiến trúc CloudFront, kinh nghiệm thực chiến hackathon, phân tích LLM non-determinism, cho đến thiết kế hệ thống multi-agent phức tạp.
+Sự kiện AWS Vietnam Community Day đã giúp tôi tiếp cận với nhiều chủ đề chuyên sâu và thiết thực hơn về cả AI và hệ sinh thái AWS. Tôi thực sự ấn tượng với sự đa dạng của các topic trong buổi event: từ định hướng thị trường việc làm, context engineering, kinh nghiệm thực chiến hackathon, kiến trúc CloudFront, xây dựng AI assistant, phân tích LLM non-determinism, cho đến thiết kế hệ thống multi-agent phức tạp.
 
 Đặc biệt, phần chia sẻ mở đầu của Anh Hưng đã mang lại cho tôi một góc nhìn thực tế và sắc bén hơn về yêu cầu của thị trường. Nó giúp tôi nhận ra rằng sinh viên/intern không chỉ cần kiến thức kỹ thuật, mà còn phải thực sự hiểu về domain và quan trọng nhất là phải xây dựng được những sản phẩm thực tế. Các phần chia sẻ tiếp theo đã củng cố thêm bài học rằng AI không chỉ là một công cụ tạo nội dung, mà nó còn liên quan mật thiết đến kiến trúc hệ thống, quy trình làm việc, kiểm thử, độ tin cậy và khả năng ứng dụng thực tiễn trong môi trường doanh nghiệp.
 
@@ -126,26 +139,29 @@ Sau event, tôi nhận thức sâu sắc rằng bản thân cần học không c
 
 ### Một số hình ảnh khi tham gia sự kiện
 
+![Poster AWS First Cloud AI Journey Community Day](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/poster.png)
+*Poster chính của AWS First Cloud AI Journey Community Day diễn ra vào ngày 23/05/2026.*
+
 ![Anh Hưng chia sẻ định hướng đầu buổi](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/hung-opening.png)
 *Anh Hưng mở đầu sự kiện và chia sẻ góc nhìn thực tế về thị trường việc làm trong kỷ nguyên AI.*
 
 ![Anh Tịnh chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/tinh-session.png)
 *Anh Tịnh chia sẻ về vai trò của ngữ cảnh khi làm việc với AI.*
 
-![Anh Hải Anh chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/haianh-session.png)
-*Anh Hải Anh giới thiệu về Friendly AI Assistant và Amazon Quick.*
+![Team VIB chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/teamVIB-session.png)
+*Team VIB chia sẻ hành trình xây dựng UTMorpho trong cuộc thi LotusHacks 2026.*
 
 ![Anh Thịnh chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/thinh-session.png)
 *Anh Thịnh trình bày về CloudFront như một nền tảng từ edge đến origin.*
 
-![Team VIB chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/teamVIB-session.png)
-*Team VIB chia sẻ hành trình xây dựng UTMorpho trong cuộc thi LotusHacks 2026.*
+![Anh Hải Anh chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/haianh-session.png)
+*Anh Hải Anh giới thiệu về Friendly AI Assistant with Amazon Quick.*
 
 ![Anh Đức chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/duc-session.png)
-*Anh Đức giải thích về tính không xác định của LLM ngay cả khi sử dụng các thiết lập deterministic.*
+*Anh Đức giải thích về tính không xác định của các thiết lập LLM tưởng như deterministic.*
 
 ![Chị Vy chia sẻ](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/vy-session.png)
 *Chị Vy trình bày về hệ thống multi-agent cấp doanh nghiệp cho bài toán đánh giá tín dụng startup.*
 
 ![Ảnh chụp tập thể tại AWS Vietnam Community Day](/fcaj-internship-report/images/4-EventParticipated/4.2-Event2/group_photo.png)
-*Ảnh chụp tập thể tại sự kiện AWS Vietnam Community Day.*
+*Ảnh chụp tập thể tại AWS Vietnam Community Day.*
