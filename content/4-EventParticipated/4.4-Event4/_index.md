@@ -1,123 +1,107 @@
 ---
-title: "Event Cloud Architect"
-date: 2026-06-20
-weight: 3
+title: "FCAJ Community Day - Data Driven, AI Risen"
+date: 2026-06-27
+weight: 4
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 4.4. </b> "
 ---
 
-# Summary Report: “Event Cloud Architect”
+# Summary Report: “FCAJ Community Day - Data Driven, AI Risen”
 
 ### Event Objectives
 
-* Create a playground for teams to test their knowledge of AWS Cloud Architecture.
-* Help interns review and apply knowledge related to AWS certifications.
-* Improve reflex skills when dealing with questions about AWS Cloud Practitioner, Solutions Architect Associate, and Solutions Architect Professional.
-* Practice teamwork, answer selection strategies, and decision-making under time pressure.
-* Help me clearly see the gap between my learned knowledge and real-world requirements.
+* Update on AI application trends in cloud operations, DevOps, voice agents, productivity, and enterprise workflows.
+* Understand how AI can assist the transition from passive alert-driven systems to active action-driven problem-solving systems.
+* Learn more about Amazon Bedrock, Amazon Nova Sonic, MCP, agentic workflows, and AI assistant models.
+* Broaden perspectives on AI applications in enterprises, especially in operations, HR, security, and private connectivity.
+* Draw lessons for learning AWS, undertaking the internship, and developing personal/group projects.
 
 ### Event Overview
 
-Event 3 was a Cloud Architect competition, not a typical seminar with sharing speakers. There were 8 teams competing in this event. My team was lucky to be approved upon registration and was included in the list of 8 competing teams. My team's name was **Lifelong Learners**, which signifies people who learn for a lifetime and always maintain a continuous learning spirit. This was a memorable event because I not only learned more AWS knowledge but also experienced the feeling of competing, teamwork, and direct competitive pressure.
+This was the monthly FCAJ Community Day with the theme **Data Driven, AI Risen**. The event focused on integrating AI into real-world enterprise scenarios, from cloud operations, voice agents, DevOps agents, and workforce planning to secure MCP connections. 
 
-### Competition Format
+Instead of just being tools to answer questions, AI solutions are now actively participating in workflows, analyzing data, automating tasks, and assisting in business decision-making. Since detailed transcripts or slides are currently unavailable, this report is summarized based on the timeline, posters, and key topics introduced during the event. The most outstanding point of the event was the strong shift towards Agentic AI, where AI is capable of automating and executing specific actions.
 
-The competition format was quite challenging and divided into multiple rounds. There were a total of 10 exam sets, each containing 10 questions, categorized by difficulty:
-* The first 5 sets were easy for the group stage.
-* The next 3 sets were medium for the semifinal.
-* The last 2 sets were hard for the final round.
+### Program Timeline
 
-Questions were taken from the knowledge scope of AWS certifications:
-* AWS Certified Cloud Practitioner (CP)
-* AWS Certified Solutions Architect – Associate (SAA)
-* AWS Certified Solutions Architect – Professional (SAP)
+* **8:30 - 9:00 AM:** Check-in / settle into your seat
+* **09:00 - 09:25 AM:** Deep Response Engine: From Detection to Autonomous Resolution
+* **09:25 - 09:55 AM:** Voice Agents: Building Human-Like AI Conversations at Scale
+* **09:55 - 10:20 AM:** AWS DevOps Agent: Your Always-Available Operations Teammate
+* **10:20 - 10:45 AM:** AI-Powered Productivity: Workforce Planning For Enterprise
+* **10:45 - 11:30 AM:** Building Secure Private MCP Connection with Amazon Q
 
-The question distribution according to the difficulty of the exam sets was as follows:
-* Easy set: 7 CP questions, 2 SAA questions, 1 SAP question
-* Medium set: 5 CP questions, 3 SAA questions, 2 SAP questions
-* Hard set: 3 CP questions, 4 SAA questions, 3 SAP questions
+### Speakers
 
-The scoring system was clear but also required caution:
-* CP-level questions: 10 points/question
-* SAA-level questions: 20 points/question
-* SAP-level questions: 50 points/question
+* **Steve Tran** - CTO/Founder, CloudThinker - *Deep Response Engine: From Detection to Autonomous Resolution*
+* **Trung Vu** - CEO, Revve AI; **Nghi Danh** - AI Engineer, Renova Cloud; **Kiet Tran** - AI Engineer, AWS Student Builder Group - *Voice Agents: Building Human-Like AI Conversations at Scale*
+* **Bao Phan** - Cloud Engineer, Cloud Kinetics; **Nguyen Nguyen** - Cloud Engineer, Cloud Kinetics - *AWS DevOps Agent: Your Always-Available Operations Teammate*
+* **Truong Tran** - AI Solution Sales, Noventiq; **Anh Dang** - Solution Sales, Noventiq - *AI-Powered Productivity: Workforce Planning For Enterprise*
+* **Nghi Danh** - AI Engineer, Renova Cloud; **Toan Nguyen** - AWS Security Builder - *Building Secure Private MCP Connection with Amazon Q*
 
-### Support Options
+### Key Highlights
 
-Each team had 2 special support options. However, these two options could not be used together on the same question.
-* **Minimize Risk**: If this option is chosen, answering correctly only earns half the points, but answering incorrectly results in no points being deducted.
-* **Hope Star**: If answered correctly, the points are doubled, but if answered incorrectly, the points deducted are doubled. This is a high-risk support option that can change the course of the match.
+#### Steve Tran - Deep Response Engine: From Detection to Autonomous Resolution
 
-These two options made the competition not just a pure test of knowledge, but also a test of smart tactics and risk assessment capabilities of each team.
+The session focused on modern cloud operations, where the number of alerts, incidents, and system complexity is constantly increasing. The main highlight was the shift from an "alert-driven" to an "action-driven" model: the system doesn't just detect problems but aims for autonomous response and resolution. Deep Response Engine was introduced as an approach that helps systems analyze incidents, determine appropriate actions, and execute autonomous incident response. The business value lies in reducing operational costs, reducing downtime, and accelerating response times to incidents.
 
-### Journey of Team Lifelong Learners
+#### Trung Vu, Nghi Danh, Kiet Tran - Voice Agents: Building Human-Like AI Conversations at Scale
 
-Just one day before the competition, the team was informed that the questions would be taken from AWS certification exams. Because the time was quite short, the team did not have much time for in-depth review.
+This session delved into the evolution from traditional IVR and chatbots to AI voice agents capable of more natural conversations. The core challenges discussed included latency, accuracy, context understanding, and natural interaction. The content covered the application of Amazon Nova Sonic, speech-to-speech foundation models, and the overall architecture connecting telephony, streaming, Amazon Bedrock, and MCP tools. The key takeaway was that building an effective voice agent requires not only a good model but also a highly optimized backend architecture, low latency, and flexible integration with enterprise systems.
 
-In the group stage, my team was in the last matchup. In our match, we faced a team that seemed to come from the University of Science, an environment known for being strong in information technology. The match was extremely dramatic. The two teams had a very intense score chase. After 10 questions of the exam set, the scores of the two teams were still tied. To break the tie, the two teams had to use an additional decisive SAP question from the remaining exam set in the medium category. Luckily, our team discussed well, answered this tie-breaker question correctly, and advanced to Semifinal 2.
+#### Bao Phan, Nguyen Nguyen - AWS DevOps Agent: Your Always-Available Operations Teammate
 
-However, in Semifinal 2, the team could no longer maintain the advantage, faced difficult questions, and had to stop. We finished our journey in 4th place overall. The final round was not held that day because it was quite late and the admins decided to reschedule it for another day.
+This session introduced the AWS DevOps Agent as an "operations teammate" always available to support DevOps teams. The content emphasized using AI-driven operations to reduce MTTD and MTTR. The agent can support multi-cloud and hybrid environments by utilizing Bedrock AgentCore and a multi-agent reasoning approach. The ECS demo helped relate the content to a real-world operational scenario on AWS.
 
-### Memorable Moments
+#### Truong Tran, Anh Dang - AI-Powered Productivity: Workforce Planning For Enterprise
 
-The feeling of nervousness when it was the team's turn to compete was a truly unforgettable experience. Under time pressure, every passing second required the whole team to highly focus to analyze the question and eliminate answers. The intense score chase and especially the decisive tie-breaker SAP question in the group stage was our most memorable moment. The burst of emotion when the MC announced the correct answer was truly amazing.
+The session focused on how AI supports workforce planning and drives HR transformation in enterprises. The content highlighted modern HR challenges such as processing personnel data, analyzing capabilities, planning resources, and supporting decision-making. Amazon Q was introduced as a powerful AI assistant platform for automation, workforce analytics, and data-driven insights. The main lesson is that enterprise AI is not solely for technical departments but also holds immense potential in optimizing operational departments like HR, planning, and management.
 
-Even though we stopped at Semifinal 2, the team still felt happy and proud because we tried our best and had valuable real-world experiences. I also have to gently mention Semifinal 1, where there was an unexpected and interesting comeback by the KLKAT team. The active competition of other teams also made the atmosphere of the event much more attractive.
+#### Nghi Danh, Toan Nguyen - Building Secure Private MCP Connection with Amazon Q
+
+The final session focused on MCP (Model Context Protocol) and its core role in expanding the capabilities of AI assistants. The content discussed the security challenges that arise when AI assistants need to connect with internal data systems or enterprise tools. Amazon Q private connectivity and VPC private connectivity were introduced as approaches to ensure secure connections. The key takeaway was that when deploying enterprise AI assistants, intelligence or automation is not enough; the system must rigorously address security, private networking, access control, and integration boundaries.
 
 ### Key Takeaways
 
-Through this event, I learned many important lessons:
-* AWS certification knowledge is very broad, especially the questions at the SAA and SAP levels.
-* Theoretical knowledge is not enough; many questions require understanding real-world scenarios and deployment experience.
-* When working in a team, agreeing quickly, analyzing options, and making decisions under time pressure is an extremely important skill.
-* Support options like Minimize Risk and Hope Star show the importance of tactics in a competition. Sometimes being cautious or taking risks at the right time will bring a great advantage.
-* Failing in the semifinal helped me realize that the team still needs to cultivate more about real-world cloud architecture, best practices, and operational scenarios on AWS.
+* AI is transitioning from content generation to actively participating in operational workflows.
+* Cloud operations can be improved through automated response systems and AI-driven incident response.
+* Voice agents require a combination of models, streaming, telephony, latency optimization, and reliable backends.
+* DevOps agents hold potential in reducing the time to detect and resolve incidents.
+* Enterprise AI assistants must be tied to specific data, processes, and business objectives.
+* MCP unlocks extensibility for AI assistants but brings stringent demands for security and connection control.
 
 ### Applying to the Internship
 
-After the event, I realized I needed to study AWS more systematically, not just learning about each service individually. Specifically:
-* Need to solidly review the fundamental knowledge of AWS Certified Cloud Practitioner.
-* Need to dig deeper into architecture design at the Solutions Architect Associate level.
-* Need to do many practical labs to understand operational scenarios close to the Solutions Architect Professional level.
-
-With the upcoming internship project, I realize that I need to pay more attention to aspects of architecture, security, reliability, cost, and scalability. This event truly gave me more motivation to study AWS seriously and prepare best for the next challenges.
+* When studying AWS, it is necessary to look at services not just in theory but to understand how they participate in practical operational workflows.
+* In upcoming internship projects, more attention should be paid to monitoring, incident response, automation, and reliability.
+* When researching AI agents, a comprehensive view of the overall architecture is required: model, tools, data sources, permissions, networking, and security boundaries.
+* The knowledge regarding DevOps Agents, MCP, and private connectivity provides me with more perspectives on AI systems deployed in enterprises.
+* This event made me realize that practical AI systems not only need to be "smart" but must also be secure, stable, integrated with infrastructure, and create operational value.
 
 ### Personal Experience
 
-This was a special and memorable event for me because I got to participate as a direct competitor, not just a passive listener. The exciting atmosphere and competitive pressure brought me very real emotions.
+This was a Community Day that continued to help me broaden my perspective on AI in cloud and enterprise environments.
 
-I feel very lucky that team Lifelong Learners was selected among the 8 competing teams. Despite having little preparation time, the members coordinated extremely well and overcame the dramatic group stage together. Having to discuss quickly within the team before choosing an answer also helped me practice my teamwork skills.
+I was impressed because the topics were not just about AI at a demo level, but targeted real-world operational problems such as incident response, DevOps, voice agents, workforce planning, and secure connectivity. Although detailed transcripts or slides were not available to capture everything, the event timeline showed that the sessions were all aligned with the trend of AI agents and AI-driven operations.
 
-Stopping at 4th place left a bit of regret, but that exactly helped me clearly see the gaps in my own AWS knowledge. I realize that to do well in the cloud field, learning never stops, true to the spirit of our team name - Lifelong Learners. At the end of the event, I felt very happy because I had a great real-world experience, gained more motivation to conquer AWS, and deeply understood the value of teamwork.
+I was particularly interested in the sessions related to the DevOps Agent, MCP, and secure private connections because they are close to the deployment of AI in real infrastructure. After the event, I feel I need to continue studying deeper into AWS operations, Bedrock, agentic workflows, security, and how AI is integrated into enterprise infrastructure.
 
 ### Some event photos
 
-![Event Cloud Architect bracket](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/bang-dau.jpg)
-*The competition bracket of Event Cloud Architect with 8 participating teams.*
+![FCAJ Community Day - Data Driven, AI Risen poster](/fcaj-internship-report/images/4-EventParticipated/4.4-Event4/poster.png)
+*Official poster of FCAJ Community Day - Data Driven, AI Risen.*
 
-![Team Lifelong Learners](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/lifelong-learners.jpg)
-*My team, Lifelong Learners, at Event Cloud Architect.*
+![Steve Tran sharing session](/fcaj-internship-report/images/4-EventParticipated/4.4-Event4/speaker1-session.png)
+*Steve Tran sharing about Deep Response Engine: From Detection to Autonomous Resolution.*
 
-![Team KLKAT](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/klkat.jpg)
-*Team KLKAT participating in Event Cloud Architect.*
+![Voice Agents sharing session](/fcaj-internship-report/images/4-EventParticipated/4.4-Event4/speaker2-session.png)
+*Trung Vu, Nghi Danh, and Kiet Tran sharing about Voice Agents: Building Human-Like AI Conversations at Scale.*
 
-![Team PrimeOps](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/primeops.jpg)
-*Team PrimeOps participating in Event Cloud Architect.*
+![AWS DevOps Agent sharing session](/fcaj-internship-report/images/4-EventParticipated/4.4-Event4/speaker3-session.png)
+*Bao Phan and Nguyen Nguyen sharing about AWS DevOps Agent: Your Always-Available Operations Teammate.*
 
-![Team newbie](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/team-newbie.jpg)
-*Team newbie participating in Event Cloud Architect.*
+![AI-Powered Productivity sharing session](/fcaj-internship-report/images/4-EventParticipated/4.4-Event4/speaker4-session.png)
+*Truong Tran and Anh Dang sharing about AI-Powered Productivity: Workforce Planning For Enterprise.*
 
-![Team Young Flame IT](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/young-flame-it.jpg)
-*Team Young Flame IT participating in Event Cloud Architect.*
-
-![Team Ngu Dai Hiep](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/ngu-dai-hiep.jpg)
-*Team Ngũ đại hiệp participating in Event Cloud Architect.*
-
-![Team Loser](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/loser.jpg)
-*Team Loser participating in Event Cloud Architect.*
-
-![Team Gap Phai Thang Lieu](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/gap-phai-thang-lieu.jpg)
-*Team Gặp phải thằng liều participating in Event Cloud Architect.*
-
-![Group photo at Event Cloud Architect](/fcaj-internship-report/images/4-EventParticipated/4.3-Event3/group-photo.jpg)
-*Group photo at Event Cloud Architect.*
+![Secure Private MCP Connection sharing session](/fcaj-internship-report/images/4-EventParticipated/4.4-Event4/speaker5-session.png)
+*Nghi Danh and Toan Nguyen sharing about Building Secure Private MCP Connection with Amazon Q.*
