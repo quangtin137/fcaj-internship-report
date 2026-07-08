@@ -6,42 +6,36 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+This section presents my personal feedback after participating in the AWS FCAJ Cloud Intern program. The comments below are based on my learning experience, project work, documentation process, and participation in community activities during the internship.
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud Journey program. This will help the FCJ team improve any shortcomings based on the following aspects:
+### 1. Working Environment
 
-### Overall Evaluation
+The FCJ working environment was open, supportive, and suitable for interns who wanted to learn more about AWS and cloud-related work. The program encouraged self-learning while still providing guidance when needed, which helped me become more responsible for my own progress.
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+### 2. Support from Mentor / Team Admin
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+The mentor and team admin provided useful orientation, learning materials, and suggestions on how to approach technical problems. Their support helped me understand the expected direction of the report and project work, especially when I needed to connect AWS concepts, security monitoring, and documentation into one consistent internship outcome.
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+### 3. Relevance of Work to Academic Major
 
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+The assigned work was relevant to my academic major because it involved cloud computing, AWS services, system design, data processing, security monitoring, and technical documentation. These topics allowed me to connect university knowledge with more practical project activities.
 
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+### 4. Learning & Skill Development Opportunities
 
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The internship gave me opportunities to improve both technical and professional skills. I learned more about AWS fundamentals, cloud architecture, security monitoring, teamwork, and technical writing. Through the AI1 role, I also practiced working with logs, datasets, anomaly detection, Isolation Forest, and model validation.
 
----
+### 5. Community Activities & Events
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+The events helped me expand my view of the AWS community and understand how technical activities are organized outside a classroom setting. By joining these activities, I learned from different speakers, observed how cloud topics are shared with the community, and gained more motivation to continue learning.
 
----
+### 6. Internship Report and Project Documentation
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+Writing the internship report with Hugo helped me improve my Markdown skills, content structure, and ability to present a personal technical product. It also made me more aware of the importance of clear documentation, especially when a project includes multiple parts such as worklogs, translated blogs, events, workshop content, self-evaluation, and feedback.
+
+### 7. Suggestions for Improvement
+
+For future interns, it would be helpful to provide an evidence or screenshot checklist earlier in the internship. A clearer template for workshop and report sections would also help interns organize content more consistently. In addition, periodic review sessions could help interns understand what is still missing and adjust their work before the final stage.
+
+### 8. Overall Feedback
+
+Overall, the AWS FCAJ Cloud Intern program was useful and meaningful for students interested in AWS, cloud computing, and security. It provided a practical learning environment, encouraged self-study, and helped me build a clearer direction for future technical development. I would recommend this program to students who want to explore cloud and security-related fields.
