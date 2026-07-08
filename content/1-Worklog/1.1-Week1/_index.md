@@ -6,31 +6,34 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 {{% notice info %}}
-📋 **Week 1 Worklog** — 17/04/2026 – 23/04/2026
+**Week 1 Worklog** - 17/04/2026 - 23/04/2026
 {{% /notice %}}
 
 ### Weekly Overview
-This week marked the beginning of my FCJ Cloud Internship. I focused on understanding the team's v3.0 Dataset-Centric / Zeek-First / Decision-Level Fusion project outline and identifying my specific responsibilities as the AI1 (Network Anomaly Detection) developer.
+The first week was mainly about entering the internship rhythm: understanding the AWS account environment, reviewing IAM and Budgets, and reading the project proposal carefully enough to locate my AI1 responsibility. At this stage, Zeek was only one possible telemetry direction in the architecture, so I focused on defining the AI1 boundary instead of assuming the final dataset too early.
 
 ### Weekly Objectives
-* Complete internship onboarding and understand the AWS account structure (IAM, Budgets).
-* Study the Hybrid IDS architecture (Zeek, Suricata, AI models, Fusion Layer).
-* Define the exact scope of the AI1 model: detecting network-level anomalies using Zeek `conn.log` telemetry.
+* Complete onboarding and review safe AWS account usage with IAM and Budgets.
+* Read the Hybrid IDS project proposal and identify where AI1 fits.
+* Separate AI1's anomaly detection scope from AI2A, AI2B, and Suricata.
+* List open questions about data sources and model direction for the next weeks.
 
 ### Daily Writing
 | Day | Date | Time Spent | Work Completed | Result | Issue | Decision | Next Step |
-|---|---|---:|---|---|---|---|---|
-| Day 1 | 17/04/2026 | 3h | Completed internship onboarding and reviewed the team project proposal. | Understood the overall goal of the Hybrid Cloud Security Platform. | Needed clarification on the boundaries between AI models. | Met with the team to divide AI scopes. | Define AI1's specific input and output contract. |
-| Day 2 | 18/04/2026 | 4h | Defined AI1 scope based on the Zeek-first dataset strategy. | Confirmed AI1 focuses only on network anomaly detection, not attack classification. | No major issue. | Use Zeek `conn.log` as the primary telemetry for AI1. | Familiarize with AWS services supporting the pipeline. |
-| Day 3 | 20/04/2026 | 5h | Explored the architecture's data flow involving SQS, AI Engine, and the Fusion Layer. | Grasped how AI1 output will act as evidence for the decision-level fusion. | Suricata's role seemed overlapping with AI1 at first glance. | Clarified that Suricata provides rule-based evidence, while AI1 provides ML-based anomaly scores. | Study Zeek `conn.log` schema. |
-| Day 4 | 21/04/2026 | 4h | Reviewed AWS IAM concepts and AWS Budgets for the project account. | Ensured I can safely practice AWS labs without exceeding cost limits. | No major issue. | Proceed with setting up a secure practice environment. | Prepare for Zeek lab setup. |
+|---|---|---|---|---|---|---|---|
+| Day 1 | 17/04/2026 | 3h | Completed onboarding, checked AWS account access, and reviewed IAM/Budgets notes. | Understood the basic account boundaries and cost-control expectations. | I was still unfamiliar with the team's AWS naming and access conventions. | Keep a short account-safety checklist before doing labs. | Review the project proposal in more detail. |
+| Day 2 | 18/04/2026 | 4h | Read the Hybrid IDS proposal and marked the parts related to AI1. | Identified AI1 as the network anomaly detection component. | The proposal mentioned several evidence sources, so the AI roles were not immediately obvious. | Treat AI1 as an unsupervised anomaly module while the data source is still being studied. | Clarify AI1 boundaries with the team. |
+| Day 3 | 20/04/2026 | 4h | Discussed AI1, AI2A, AI2B, and Suricata responsibilities with the team. | Reduced overlap between ML-based anomaly detection and rule-based alerting. | Suricata alerts initially looked close to AI1 outputs. | AI1 should not duplicate Suricata; it should provide a separate anomaly signal. | Prepare initial notes about possible telemetry sources. |
+| Day 4 | 21/04/2026 | 4h | Summarized AI1 scope, AWS onboarding notes, and unanswered dataset questions. | Created a clearer starting point for Week 2 exploration. | The final dataset direction was not ready to confirm. | Use careful wording in the report and keep Zeek as a potential direction only. | Start AWS networking practice and dataset survey. |
 
 ### Technical Implementation
-I reviewed the project's **decision-level fusion** architecture. I learned that my **AI1** model will consume flow-level features extracted from Zeek's `conn.log` / `conn_dataset`. The AI1 output will not classify specific attack types (which is AI2A's job) but will output a `NORMAL` or `ANOMALY` label along with an `anomaly_score` or `confidence`. This output will then be forwarded to the Fusion Layer, which aggregates results from AI1, AI2A, AI2B, and Suricata evidence to calculate a final Risk Score.
+On the AWS side, I reviewed IAM users/roles, permission boundaries at a beginner level, and Budgets as a guardrail for hands-on practice. This was useful because most later labs would require me to understand what I was allowed to create, change, or delete.
+
+For AI1, I focused on the project proposal rather than implementation. The main output of the week was a scope note: AI1 should contribute network anomaly evidence, while AI2A, AI2B, and Suricata cover different evidence types. I avoided writing that Zeek conn.log had already become the main dataset.
 
 ### Challenges & Solutions
-* **Challenge:** Initially, I was confused about whether AI1 needed to process HTTP/DNS logs or Suricata alerts directly.
-* **Solution:** I coordinated with the team and clarified that AI1 strictly processes `conn.log` flow-level telemetry. Other logs like `http.log` will be handled by AI2B, and Suricata alerts bypass the AI models to go straight to the Fusion Layer. This clearly bounded my scope.
+* **Challenge:** AI1's boundary was easy to blur with Suricata and the other AI modules.
+* **Solution:** I clarified the role split with the team and recorded AI1 as an anomaly-detection component whose data source still needed validation.
 
 ### Internship Reflection
-Starting the internship by clearly drawing the boundaries of my AI1 role was essential. I now understand that my responsibility is to build a robust, unsupervised anomaly detection model using Zeek telemetry, while trusting the rest of the architecture (SQS, Fusion Layer) to handle message routing and final alerting decisions.
+This week taught me that defining the role correctly is part of engineering work, not just administration. If AI1 is described too broadly, the later model work can become hard to explain. I also realized that early project documents are starting points, not final implementation evidence. That helped me write the worklog more carefully from the beginning.

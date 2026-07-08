@@ -6,31 +6,34 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 {{% notice info %}}
-📋 **Worklog Tuần 1** — 17/04/2026 – 23/04/2026
+**Worklog Tuần 1** - 17/04/2026 - 23/04/2026
 {{% /notice %}}
 
 ### Tổng quan trong tuần
-Tuần này đánh dấu sự khởi đầu của kỳ thực tập FCJ Cloud Intern. Tôi tập trung vào việc đọc hiểu đề cương dự án v3.0 (Dataset-Centric / Zeek-First / Decision-Level Fusion) của nhóm và xác định rõ trách nhiệm cụ thể của mình ở vai trò AI1 (Network Anomaly Detection).
+Tuần đầu tiên chủ yếu là giai đoạn làm quen với nhịp thực tập: tìm hiểu môi trường tài khoản AWS, ôn IAM và Budgets, đồng thời đọc đề cương dự án để xác định phần việc AI1 của mình. Ở thời điểm này, Zeek chỉ được xem như một hướng telemetry có thể dùng trong kiến trúc, nên tôi tập trung làm rõ phạm vi AI1 thay vì vội xem đó là dataset chính.
 
 ### Mục tiêu trong tuần
-* Hoàn tất onboarding và làm quen môi trường tài khoản AWS (IAM, Budgets).
-* Nghiên cứu kiến trúc Hybrid IDS (Zeek, Suricata, các mô hình AI, Fusion Layer).
-* Xác định chính xác phạm vi của mô hình AI1: phát hiện bất thường tầng network sử dụng telemetry từ Zeek `conn.log`.
+* Hoàn tất onboarding và rà soát cách sử dụng tài khoản AWS an toàn qua IAM, Budgets.
+* Đọc đề cương Hybrid IDS và xác định AI1 nằm ở đâu trong kiến trúc.
+* Tách rõ phạm vi phát hiện bất thường của AI1 với AI2A, AI2B và Suricata.
+* Ghi lại các câu hỏi còn mở về nguồn dữ liệu và hướng mô hình cho các tuần sau.
 
 ### Nhật ký hằng ngày
 | Ngày | Ngày thực tế | Thời gian | Công việc đã hoàn thành | Kết quả | Vấn đề | Quyết định | Bước tiếp theo |
-|---|---|---:|---|---|---|---|---|
-| Ngày 1 | 17/04/2026 | 3 giờ | Hoàn tất thủ tục onboarding và đọc đề cương dự án của nhóm. | Hiểu được mục tiêu tổng thể của nền tảng Hybrid Cloud Security. | Cần làm rõ ranh giới nhiệm vụ giữa các mô hình AI. | Họp nhóm để chia nhỏ phạm vi AI. | Xác định hợp đồng input/output cụ thể của AI1. |
-| Ngày 2 | 18/04/2026 | 4 giờ | Xác định scope của AI1 dựa trên chiến lược Zeek-first dataset. | Chốt việc AI1 chỉ tập trung phát hiện bất thường mạng, không phân loại tấn công cụ thể. | Không có vấn đề lớn. | Sử dụng Zeek `conn.log` làm nguồn telemetry chính cho AI1. | Tìm hiểu các dịch vụ AWS hỗ trợ pipeline. |
-| Ngày 3 | 20/04/2026 | 5 giờ | Tìm hiểu luồng dữ liệu kiến trúc liên quan đến SQS, AI Engine và Fusion Layer. | Nắm được output của AI1 sẽ đóng vai trò là một bằng chứng (evidence) cho lớp tổng hợp quyết định. | Vai trò của Suricata ban đầu có vẻ chồng chéo với AI1. | Làm rõ rằng Suricata cung cấp rule-based evidence, còn AI1 cung cấp anomaly score dựa trên ML. | Nghiên cứu schema của Zeek `conn.log`. |
-| Ngày 4 | 21/04/2026 | 4 giờ | Ôn lại kiến thức AWS IAM và cấu hình AWS Budgets. | Đảm bảo có thể thực hành lab AWS an toàn mà không vượt ngân sách. | Không có vấn đề lớn. | Bắt tay vào thiết lập môi trường thực hành bảo mật. | Chuẩn bị thiết lập Zeek lab. |
+|---|---|---|---|---|---|---|---|
+| Ngày 1 | 17/04/2026 | 3 giờ | Hoàn tất onboarding, kiểm tra quyền truy cập tài khoản AWS và ôn lại IAM/Budgets. | Nắm được ranh giới sử dụng tài khoản và yêu cầu kiểm soát chi phí. | Tôi chưa quen với cách nhóm đặt tên và phân quyền trong AWS. | Giữ một checklist ngắn về an toàn tài khoản trước khi làm lab. | Đọc kỹ hơn đề cương dự án. |
+| Ngày 2 | 18/04/2026 | 4 giờ | Đọc đề cương Hybrid IDS và đánh dấu các phần liên quan đến AI1. | Xác định AI1 là thành phần phát hiện bất thường ở tầng network. | Đề cương nhắc đến nhiều nguồn bằng chứng nên vai trò từng AI ban đầu chưa thật rõ. | Xem AI1 như module anomaly detection không giám sát trong khi nguồn dữ liệu còn cần khảo sát. | Trao đổi với nhóm để làm rõ ranh giới AI1. |
+| Ngày 3 | 20/04/2026 | 4 giờ | Trao đổi với nhóm về vai trò AI1, AI2A, AI2B và Suricata. | Giảm nhầm lẫn giữa phát hiện bất thường bằng ML và cảnh báo rule-based. | Suricata alert ban đầu có vẻ gần với output của AI1. | AI1 không nên lặp lại Suricata mà cần cung cấp một tín hiệu anomaly riêng. | Chuẩn bị ghi chú về các nguồn telemetry có thể dùng. |
+| Ngày 4 | 21/04/2026 | 4 giờ | Tổng hợp phạm vi AI1, ghi chú onboarding AWS và các câu hỏi về dataset. | Có điểm xuất phát rõ hơn cho phần khảo sát ở Tuần 2. | Hướng dataset cuối cùng chưa thể xác nhận ngay. | Viết báo cáo thận trọng và chỉ xem Zeek là một hướng tiềm năng. | Bắt đầu thực hành networking AWS và khảo sát dataset. |
 
 ### Chi tiết thực hiện
-Tôi đã nghiên cứu kỹ kiến trúc **decision-level fusion** của dự án. Tôi nhận thấy mô hình **AI1** của mình sẽ tiêu thụ các đặc trưng mức luồng (flow-level features) được trích xuất từ `conn.log` / `conn_dataset` của Zeek. Output của AI1 sẽ không phân loại đích danh loại tấn công (đó là việc của AI2A) mà chỉ xuất ra nhãn `NORMAL` hoặc `ANOMALY` kèm theo `anomaly_score` hoặc `confidence`. Output này sau đó sẽ được đẩy sang Fusion Layer, nơi tổng hợp kết quả từ AI1, AI2A, AI2B và Suricata evidence để tính toán ra Risk Score cuối cùng.
+Ở phần AWS, tôi ôn IAM user/role, phạm vi quyền ở mức cơ bản và Budgets như một lớp kiểm soát chi phí khi thực hành. Việc này cần thiết vì các lab sau đều yêu cầu hiểu rõ mình được tạo, sửa hoặc xóa tài nguyên nào.
+
+Ở phần AI1, trọng tâm chưa phải triển khai mà là đọc đề cương và khoanh vùng trách nhiệm. Kết quả chính của tuần là ghi chú phạm vi: AI1 cung cấp bằng chứng anomaly ở tầng network, còn AI2A, AI2B và Suricata xử lý các loại bằng chứng khác. Tôi tránh viết rằng Zeek conn.log đã là dataset chính ngay từ đầu.
 
 ### Khó khăn & Cách xử lý
-* **Vấn đề gặp phải:** Ban đầu, tôi khá bối rối không biết AI1 có cần phải xử lý trực tiếp HTTP/DNS log hay phân tích thẳng cảnh báo từ Suricata hay không.
-* **Cách giải quyết:** Tôi đã phối hợp cùng team để làm rõ rằng AI1 chỉ xử lý duy nhất flow-level telemetry từ `conn.log`. Các log khác như `http.log` sẽ do AI2B phụ trách, và cảnh báo Suricata sẽ đi thẳng vào Fusion Layer mà không qua AI. Việc này giúp tôi khoanh vùng phạm vi cực kỳ rõ ràng.
+* **Vấn đề gặp phải:** Ranh giới AI1 dễ bị lẫn với Suricata và các module AI khác.
+* **Cách giải quyết:** Tôi trao đổi lại với nhóm, ghi nhận AI1 là thành phần anomaly detection và nguồn dữ liệu vẫn cần được kiểm chứng thêm.
 
 ### Nhận xét cá nhân
-Việc bắt đầu kỳ thực tập bằng cách vạch ra ranh giới rõ ràng cho vai trò AI1 là vô cùng cần thiết. Tôi hiểu rằng nhiệm vụ của mình là xây dựng một mô hình phát hiện bất thường không giám sát thật vững chắc dùng Zeek telemetry, đồng thời tin tưởng vào kiến trúc chung (SQS, Fusion Layer) trong việc định tuyến thông điệp và ra quyết định cảnh báo cuối cùng.
+Tuần này giúp tôi hiểu rằng xác định đúng vai trò cũng là một phần của công việc kỹ thuật, không chỉ là thủ tục ban đầu. Nếu mô tả AI1 quá rộng, các bước xây dựng mô hình sau này sẽ khó giải thích. Tôi cũng nhận ra tài liệu đề cương chỉ là điểm xuất phát, chưa phải bằng chứng triển khai cuối cùng. Nhờ vậy tôi thận trọng hơn khi viết worklog ngay từ đầu.

@@ -1,38 +1,40 @@
 ---
-title: "Tuần 6 - Đánh giá AI1 và đóng băng artifact"
+title: "Tuần 6 - Dịch vụ giám sát bảo mật và điều chỉnh chiến lược dữ liệu"
 date: 2026-05-22
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
 {{% notice info %}}
-📋 **Worklog Tuần 6** — 22/05/2026 – 28/05/2026
+**Worklog Tuần 6** - 22/05/2026 - 28/05/2026
 {{% /notice %}}
 
 ### Tổng quan trong tuần
-Tuần này là một cột mốc quan trọng. Tôi đã đánh giá mô hình AI1 bằng các metric tiêu chuẩn, đóng băng (freeze) ngưỡng quyết định tối ưu, và hoàn thiện các artifact kỹ thuật cần thiết để đưa vào triển khai.
+Tuần 6 là lúc các hạn chế của dataset công khai chuyển thành một cuộc rà soát chiến lược dữ liệu rõ ràng hơn. Tôi học VPC Flow Logs, GuardDuty và Security Hub để hiểu monitoring bảo mật native trên AWS, rồi tổng hợp vì sao CICIDS/CICIDS2018 chưa phù hợp với AI1 theo pipeline dự kiến. Kết luận là cần chuyển sang nguồn log gần telemetry thực tế hơn.
 
 ### Mục tiêu trong tuần
-* Đánh giá AI1 bằng các chỉ số như False Positive Rate và Detection Rate.
-* Chốt và đóng băng threshold cho đầu ra `NORMAL`/`ANOMALY`.
-* Chuẩn hóa các artifact của AI1 (`model_card.md`, `feature_manifest.json`, `thresholds_frozen.json`).
-* Xuất model và preprocessor để dùng cho môi trường inference.
+* Tìm hiểu VPC Flow Logs và metadata mạng mà dịch vụ cung cấp.
+* Rà soát vai trò GuardDuty và Security Hub trong monitoring bảo mật AWS.
+* Tổng hợp hạn chế schema, feature và label của CICIDS/CICIDS2018.
+* Phác thảo danh sách artifact AI1 dự kiến và đề xuất hướng dữ liệu tiếp theo.
 
 ### Nhật ký hằng ngày
 | Ngày | Ngày thực tế | Thời gian | Công việc đã hoàn thành | Kết quả | Vấn đề | Quyết định | Bước tiếp theo |
-|---|---|---:|---|---|---|---|---|
-| Ngày 1 | 22/05/2026 | 5 giờ | Đánh giá mô hình AI1 trên tập attack data để tính False Positive Rate và Detection Rate. | Thấy rõ sự đánh đổi (trade-off) giữa việc bắt được tấn công và việc gây nhiễu cảnh báo. | Cần chọn một điểm hoạt động (operating point) dứt khoát. | Chọn threshold ưu tiên phạt nặng false positive, vì Fusion Layer cần evidence sạch. | Đóng băng decision threshold. |
-| Ngày 2 | 23/05/2026 | 4 giờ | Tham gia AWS Vietnam Community Day và ghi chú các session về AI context, CloudFront, Amazon Quick, LLM non-determinism và multi-agent systems. | Mở rộng góc nhìn về các use case AI và AWS ngoài phần mô hình AI1. | Cần tránh trộn nội dung event với chi tiết triển khai chính của AI1. | Đưa nội dung chi tiết vào Event Participated, trong Worklog chỉ ghi nhận tác động học tập. | Xem lại bài học nào có thể hỗ trợ phần reflection về kiến trúc AI/security. |
-| Ngày 3 | 25/05/2026 | 4 giờ | Đóng băng threshold ở mức `0.398066` và ghi nhận decision rule. | Chốt rule: `if confidence >= 0.398066 => ANOMALY`. | Đảm bảo các app phía sau dùng đúng threshold này. | Lưu threshold vào file `thresholds_frozen.json` để load động. | Sinh feature manifest. |
-| Ngày 4 | 26/05/2026 | 4 giờ | Tạo file `feature_manifest.json` liệt kê chính xác thứ tự 30 feature. | Đảm bảo tính nhất quán của schema giữa lúc train và inference. | Code inference có thể crash nếu thiếu feature. | Tài liệu hóa rõ ràng policy `fail_if_missing` trong model card. | Dump các file joblib. |
-| Ngày 5 | 27/05/2026 | 5 giờ | Export `model.joblib`, `preprocessor.joblib`, và tạo `smoke_samples.jsonl`. | Hoàn thiện gói artifact `AI1_ISOLATION_FOREST_V1`. | Có cân nhắc hướng đi ONNX nhưng quyết định giữ `joblib` cho hiện tại vì tính tương thích runtime. | Chuẩn bị test tích hợp với các file joblib artifact này. | Chuẩn bị tích hợp SQS. |
+|---|---|---|---|---|---|---|---|
+| Ngày 1 | 22/05/2026 | 4 giờ | Tìm hiểu các field và use case của VPC Flow Logs. | Biết thêm một nguồn bằng chứng network-level trong AWS. | Flow Logs không giống Zeek và có mức chi tiết khác. | So sánh dịch vụ theo thông tin thực tế. | Rà soát GuardDuty và Security Hub. |
+| Ngày 2 | 23/05/2026 | 4 giờ | Đọc overview GuardDuty và Security Hub. | Hiểu cách managed finding hỗ trợ security monitoring. | Managed finding không thay thế anomaly score của AI1. | Xem chúng là nguồn bằng chứng riêng. | Tổng hợp vấn đề từ thử nghiệm dataset. |
+| Ngày 3 | 25/05/2026 | 5 giờ | Gom ghi chú từ preprocessing và thử model với CICIDS/CICIDS2018. | Nhóm vấn đề thành schema mismatch, feature mismatch và khó khăn về label. | Cùng một vấn đề xuất hiện dưới nhiều dạng ở các notebook. | Viết phần hạn chế theo nguyên nhân, không theo từng notebook. | Trao đổi hướng dữ liệu. |
+| Ngày 4 | 26/05/2026 | 4 giờ | Trao đổi vì sao cần nguồn log gần pipeline dự án hơn. | Có lý do rõ hơn để chuyển sang Zeek conn.log. | Việc đổi hướng cần viết như điều chỉnh kỹ thuật, không phải làm lại đột ngột. | Trình bày theo hướng giảm train-serving mismatch. | Phác thảo artifact dự kiến. |
+| Ngày 5 | 27/05/2026 | 3 giờ | Phác thảo ghi chú về artifact AI1 và hướng dữ liệu dự kiến. | Chuẩn bị mốc chuyển hướng cho Tuần 7. | Artifact mới ở mức planned, chưa hoàn tất. | Dùng từ planned/expected trong báo cáo. | Bắt đầu đọc schema Zeek tuần sau. |
 
 ### Chi tiết thực hiện
-Tôi đã đánh giá mô hình `AI1_ISOLATION_FOREST_V1`, tập trung mạnh vào việc giảm thiểu False Positive Rate. Tôi phân tích phân phối điểm số và chính thức đóng băng ngưỡng `selected_threshold = 0.398066`. Luật quyết định (decision rule) được định nghĩa chặt chẽ: `confidence >= 0.398066` sẽ xuất ra `ANOMALY`, thấp hơn là `NORMAL`, tuân thủ nguyên tắc `higher_is_more_anomalous`. Tôi hoàn thiện gói triển khai bằng cách tạo `feature_manifest.json` (chốt cứng 30 đặc trưng), `thresholds_frozen.json`, và export `model.joblib`, `preprocessor.joblib`. Tôi cũng soạn `model_card.md` ghi rõ mục tiêu, scope (`ZEEK_CONN_FLOW_ANOMALY_FEATURES`) và chính sách xử lý dữ liệu `fail_if_missing`. Cuối cùng, tôi tạo file `smoke_samples.jsonl` để các kỹ sư backend dễ dàng test tích hợp.
+VPC Flow Logs, GuardDuty và Security Hub giúp tôi tách rõ các loại bằng chứng bảo mật khác nhau. AWS có thể cung cấp network metadata và managed finding, nhưng AI1 vẫn cần một nguồn feature nhất quán để train và đánh giá.
+
+Phần review dataset dẫn đến một lo ngại thực tế: train-serving mismatch. Mô hình học từ feature dataset công khai có thể hoạt động kém nếu lúc triển khai nhận định dạng log khác. Đây là lý do đề xuất Zeek conn.log làm hướng tiếp theo.
 
 ### Khó khăn & Cách xử lý
-* **Vấn đề gặp phải:** Việc đảm bảo môi trường inference thực thi chính xác các bước tiền xử lý và thứ tự cột y hệt như môi trường huấn luyện luôn là bài toán MLOps nan giải.
-* **Cách giải quyết:** Bằng cách đóng băng `feature_manifest.json` và xuất file `preprocessor.joblib` đi kèm model, tôi đã tách biệt logic này khỏi notebook huấn luyện. Script inference sẽ buộc phải đọc manifest để ép thứ tự cột và áp dụng preprocessor, gần như loại bỏ hoàn toàn rủi ro lệch schema (train-serving mismatch).
+* **Vấn đề gặp phải:** Rủi ro lớn nhất là train trên một định nghĩa feature nhưng serving bằng định nghĩa khác.
+* **Cách giải quyết:** Tôi tổng hợp mismatch rõ ràng và viết hướng Zeek như một đề xuất/định hướng, chưa xem là migration đã hoàn tất.
 
 ### Nhận xét cá nhân
-Việc tham dự AWS Vietnam Community Day giúp tôi mở rộng tầm nhìn về kiến trúc AI trên cloud, trong khi các công việc hàng ngày lại rèn luyện sự tỉ mỉ đến từng chi tiết. Đóng băng artifact và viết model card mang lại cảm giác chuyển giao từ khâu "thử nghiệm" sang "kỹ thuật thực thụ". AI1 không còn chỉ là một script chạy trên máy tính cá nhân nữa; nó đã trở thành một thành phần microservice được quản lý phiên bản và có hợp đồng giao tiếp (contract) rõ ràng, sẵn sàng cho việc tích hợp vào pipeline chung.
+Tuần này giúp tôi hiểu rằng đổi chiến lược dữ liệu có thể là một quyết định kỹ thuật có trách nhiệm. Phần làm với dataset công khai không bị lãng phí; nó chỉ ra điều gì có thể sai nếu bỏ qua dữ liệu lúc serving. Các dịch vụ bảo mật AWS cũng cho thấy nền tảng monitoring kết hợp nhiều loại bằng chứng. AI1 cần khớp vào hệ đó, thay vì nghĩ một dataset có thể giải quyết mọi thứ.

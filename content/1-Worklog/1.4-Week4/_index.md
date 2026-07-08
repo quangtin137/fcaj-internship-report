@@ -1,38 +1,40 @@
 ---
-title: "Week 4 - SQS Messaging and Baseline Isolation Forest"
+title: "Week 4 - SQS Messaging and Initial Isolation Forest Experiments"
 date: 2026-05-08
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
 {{% notice info %}}
-📋 **Week 4 Worklog** — 08/05/2026 – 14/05/2026
+**Week 4 Worklog** - 08/05/2026 - 14/05/2026
 {{% /notice %}}
 
 ### Weekly Overview
-This week, I stepped into the AWS messaging services and core ML modeling. I learned how SQS handles messages in real-time pipelines and trained the initial AI1_ISOLATION_FOREST_V1 model on our normal baseline dataset.
+Week 4 combined AWS messaging practice with the first small Isolation Forest trials. I studied how SQS queues decouple producers and consumers, practiced basic boto3 send/receive operations, and used a selected public dataset subset to observe anomaly score behavior. These experiments were useful for learning, but not treated as a stable AI1 baseline.
 
 ### Weekly Objectives
-* Understand Amazon SQS and its role in real-time message queuing.
-* Train the baseline AI1 Isolation Forest model on normal traffic.
-* Understand the `contamination` parameter and the concept of anomaly scores.
-* Prepare the initial `NORMAL`/`ANOMALY` + `anomaly_score` output structure.
+* Understand SQS queue behavior and basic boto3 message operations.
+* Record useful points from FCAJ Community Day if applicable.
+* Run an initial Isolation Forest experiment on selected public dataset features.
+* Inspect contamination settings and anomaly score distribution without overclaiming results.
 
 ### Daily Writing
 | Day | Date | Time Spent | Work Completed | Result | Issue | Decision | Next Step |
-|---|---|---:|---|---|---|---|---|
-| Day 1 | 08/05/2026 | 4h | Studied Amazon SQS concepts and its producer/consumer separation pattern. | Grasped how SQS buffers real-time log ingestion. | No major issue. | Use SQS concepts to plan how the AI1 inference script will poll data. | Attend FCAJ Community Day. |
-| Day 2 | 09/05/2026 | 4h | Participated in FCAJ Community Day and took notes on AI, AWS learning direction, and prompt engineering. | Collected useful insights for the internship report and project reflection. | Needed to connect event lessons with my AI1 role. | Summarize only key takeaways in Worklog and keep the detailed report in Event Participated. | Apply relevant AI workflow lessons to the AI1 reflection. |
-| Day 3 | 11/05/2026 | 5h | Trained the `AI1_ISOLATION_FOREST_V1` model using the 30-feature baseline dataset. | Model successfully learned the representation of normal network behavior. | Unsupervised nature meant no immediate validation metric. | Focus on tuning the contamination parameter to observe score distributions. | Analyze anomaly scores. |
-| Day 4 | 12/05/2026 | 5h | Evaluated the output `anomaly_score` distributions on the training set. | Noticed how the model isolates data points. | Needed to map raw model scores to a clear `NORMAL`/`ANOMALY` output. | Adopt the `higher_is_more_anomalous` score direction for consistency. | Prepare threshold tuning strategy. |
-| Day 5 | 13/05/2026 | 4h | Formatted the AI1 output structure to return `label` and `confidence`. | AI1 output contract is now clearly defined for the Fusion Layer. | No major issue. | Proceed to generate attack traffic to actually test this baseline. | Prepare for attack data generation. |
+|---|---|---|---|---|---|---|---|
+| Day 1 | 08/05/2026 | 4h | Studied SQS queue concepts and message lifecycle. | Understood why queues are useful between ingestion and processing components. | Visibility timeout and deletion behavior needed extra attention. | Keep SQS notes focused on decoupling, not final AI1 integration. | Try boto3 send/receive. |
+| Day 2 | 09/05/2026 | 4h | Practiced boto3 send_message and receive_message patterns. | Confirmed the basic shape of queue-based communication. | Local credentials and region settings needed checking. | Document setup assumptions for later labs. | Prepare model experiment input. |
+| Day 3 | 11/05/2026 | 4h | Prepared a public dataset subset for the first Isolation Forest run. | Created a small numeric feature matrix for testing. | Feature selection changed the input distribution noticeably. | Use the subset only for behavior observation. | Run Isolation Forest with different contamination values. |
+| Day 4 | 12/05/2026 | 5h | Ran initial Isolation Forest experiments and inspected anomaly scores. | Saw how contamination affects the number of predicted anomalies. | The score distribution was not easy to interpret as attack probability. | Describe scores as anomaly indicators, not attack classification confidence. | Write exploratory findings. |
+| Day 5 | 13/05/2026 | 3h | Summarized why the model trial was exploratory. | Clarified that public dataset experiments were for learning model behavior. | It was tempting to call the first run a baseline. | Avoid naming it as a frozen or stable AI1 version. | Continue limitation analysis next week. |
 
 ### Technical Implementation
-I explored Amazon SQS to understand how it separates data producers (log shippers) from consumers (AI Engine), preparing for future real-time integrations. I then trained the **Isolation Forest** model on the normal baseline. I chose Isolation Forest because AI1's goal is strictly anomaly detection (finding deviations from normal) rather than being a supervised attack classifier. The model outputs an `anomaly_score` where `higher_is_more_anomalous`. I configured the model output to provide a `NORMAL` or `ANOMALY` label alongside a `confidence` metric, perfectly aligning with the inputs expected by the decision-level Fusion Layer.
+SQS introduced a different kind of AWS thinking: the producer and consumer do not have to run at the same time. boto3 practice helped me see how message payloads would later need clear structure and validation.
+
+The Isolation Forest trial was intentionally small. I selected numeric features, ran the model, and checked how score distribution changed with contamination. The result was a learning artifact, not a final model contract.
 
 ### Challenges & Solutions
-* **Challenge:** Without labeled attack data, validating the Isolation Forest's initial performance was entirely subjective, relying solely on adjusting the `contamination` parameter.
-* **Solution:** I decided to tentatively set the contamination parameter based on statistical outlier expectations in the baseline, but acknowledged that attack data is strictly required, not for training, but to objectively evaluate and freeze the decision threshold in the coming weeks.
+* **Challenge:** Isolation Forest was sensitive to feature selection and contamination.
+* **Solution:** I compared score distributions instead of presenting the first run as a reliable baseline.
 
 ### Internship Reflection
-Training the baseline model brought the project's logic together. The FCAJ Community Day event also reinforced my understanding of AI-driven workflows. I learned that an unsupervised model shouldn't be forced into the role of an attack classifier; its strength lies purely in knowing what "normal" looks like, making the next step—testing it against real attacks—crucial.
+This week was the first time AI1 felt like a model task, but it also showed why early model results can be misleading. Isolation Forest is useful for learning abnormal behavior, yet it depends heavily on the input representation. SQS also reminded me that model output eventually has to move through software components. A model experiment alone is not enough to define a system.

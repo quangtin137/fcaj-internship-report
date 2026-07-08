@@ -1,37 +1,39 @@
 ---
-title: "Tuần 2 - Thiết lập lab Zeek và nghiên cứu schema conn.log"
+title: "Tuần 2 - Thực hành AWS VPC/EC2 và khảo sát dataset công khai"
 date: 2026-04-24
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
 {{% notice info %}}
-📋 **Worklog Tuần 2** — 24/04/2026 – 30/04/2026
+**Worklog Tuần 2** - 24/04/2026 - 30/04/2026
 {{% /notice %}}
 
 ### Tổng quan trong tuần
-Tuần này, tôi tập trung vào khía cạnh hạ tầng cần thiết để sinh ra nguồn ML telemetry chính của chúng tôi. Tôi đã nghiên cứu cấu hình lab giám sát bảo mật và phân tích sâu schema của Zeek `conn.log` để hiểu rõ các đặc trưng mạng thô mà mình sẽ xử lý.
+Tuần 2 chuyển từ onboarding sang thực hành networking cơ bản trên AWS. Tôi ôn VPC, subnet, route table, security group, EC2, SSH và IAM Role, đồng thời bắt đầu khảo sát dataset an ninh mạng công khai. Phần AI1 vẫn ở mức tìm hiểu, chủ yếu đọc metadata, nhãn và ý nghĩa feature của CICIDS/CICIDS2018.
 
 ### Mục tiêu trong tuần
-* Nắm bắt môi trường lab giám sát bảo mật trên AWS (VPC, EC2).
-* Nghiên cứu schema của Zeek `conn.log` và phân tích `conn_dataset`.
-* Thiết kế schema đặc trưng ban đầu cho mô hình tầng network AI1.
-* Phân biệt rõ sự khác nhau giữa raw log, processed feature và model input.
+* Ôn quan hệ giữa VPC, subnet, route table và security group.
+* Tạo hoặc rà soát EC2 instance và kết nối SSH an toàn.
+* Đọc mô tả CICIDS/CICIDS2018, nhãn và nhóm tấn công.
+* Lập ghi chú so sánh ban đầu giữa feature dataset công khai và nhu cầu anomaly detection của AI1.
 
 ### Nhật ký hằng ngày
 | Ngày | Ngày thực tế | Thời gian | Công việc đã hoàn thành | Kết quả | Vấn đề | Quyết định | Bước tiếp theo |
-|---|---|---:|---|---|---|---|---|
-| Ngày 1 | 24/04/2026 | 5 giờ | Xem lại cấu hình VPC và EC2 của lab để hiểu Zeek capture traffic ở đâu. | Nắm được topology mạng đang sinh ra dữ liệu. | Cần tách biệt log Zeek khỏi các log hệ thống thông thường. | Chỉ tập trung vào output `conn.log` của Zeek trên S3 bucket. | Nghiên cứu các trường của `conn.log`. |
-| Ngày 2 | 25/04/2026 | 4 giờ | Đọc tài liệu Zeek về các trường `conn.log` (duration, orig_bytes, resp_bytes, conn_state). | Xác định được các flow-level features nền tảng. | Một số trường như `conn_state` mang giá trị phân loại (categorical). | Lên kế hoạch mã hóa các trạng thái kết nối này trong feature extractor. | Phân tích raw `conn_dataset`. |
-| Ngày 3 | 27/04/2026 | 6 giờ | Khám phá một `conn_dataset` mẫu để xem phân phối giá trị thực tế. | Nhận thấy giá trị thiếu (missing value) được biểu diễn bằng dấu gạch nối ('-'). | Giá trị thiếu sẽ làm hỏng tiến trình ML inference. | Đặt policy `fail_if_missing` cho các trường bắt buộc, nhưng phải viết hàm parse dấu gạch nối cẩn thận. | Phác thảo schema đặc trưng cho AI1. |
-| Ngày 4 | 28/04/2026 | 4 giờ | Phác thảo schema đặc trưng AI1, tách biệt các flow feature cơ bản khỏi các cờ giao thức. | Tạo được cấu trúc rõ ràng cho feature extractor. | Rủi ro bất đồng bộ schema giữa môi trường train và serving. | Đảm bảo code feature extractor phải được dùng chung nghiêm ngặt giữa pipeline huấn luyện và inference. | Chuẩn bị thu thập normal traffic. |
+|---|---|---|---|---|---|---|---|
+| Ngày 1 | 24/04/2026 | 4 giờ | Ôn VPC, subnet, route table và security group. | Hiểu hơn cách AWS biểu diễn cô lập mạng. | Ban đầu tôi dễ nhầm giữa route table và subnet association. | Vẽ sơ đồ VPC nhỏ trước khi chỉnh cấu hình. | Thực hành truy cập EC2. |
+| Ngày 2 | 25/04/2026 | 4 giờ | Tạo hoặc rà soát EC2 instance và kiểm tra yêu cầu SSH. | Liên hệ được lý thuyết networking với một tài nguyên compute cụ thể. | Inbound rule của security group cần kiểm tra kỹ. | Chỉ mở quyền SSH cần thiết cho phạm vi lab. | Chuyển sang đọc dataset công khai. |
+| Ngày 3 | 27/04/2026 | 5 giờ | Đọc metadata, mô tả label và nhóm tấn công của CICIDS/CICIDS2018. | Có hình dung ban đầu về cấu trúc dataset. | Dataset có nhiều flow feature đã được tính sẵn nhưng nguồn gốc không phải lúc nào cũng rõ. | Ghi lại field chưa rõ thay vì tự giả định nó khớp pipeline dự án. | So sánh feature với nhu cầu AI1. |
+| Ngày 4 | 28/04/2026 | 4 giờ | So sánh feature dataset công khai với bài toán phát hiện bất thường mạng. | Nhận ra label công khai hữu ích để học nhưng chưa chắc phù hợp với log khi triển khai. | Định nghĩa feature khác với hướng log-based mà dự án có thể dùng về sau. | Giữ dataset công khai ở vai trò khảo sát, chưa xem là input cuối. | Tuần sau tiếp tục với lưu trữ và tiền xử lý. |
 
 ### Chi tiết thực hiện
-Tôi đã nghiên cứu môi trường lab bảo mật, làm quen với cách cấu hình VPC và EC2 hỗ trợ pipeline thu thập log. Công việc kỹ thuật chính của tôi là mổ xẻ cấu trúc Zeek `conn.log`. Tôi bắt đầu quan sát các đặc trưng luồng cơ bản như `duration`, `orig_bytes`, `resp_bytes`, `orig_pkts` và `resp_pkts`. Tôi cũng chú ý đến các cờ giao thức (`proto`, `service`) và trạng thái kết nối (`conn_state`). Tôi sớm nhận ra rằng phải xây dựng một bộ feature extractor vững chắc để parse các raw log này một cách nhất quán, bởi vì việc giữ tính đồng nhất của schema là cách duy nhất để tránh hiện tượng train-serving mismatch khi đưa mô hình ra thực tế.
+Phần AWS tập trung vào cách hình thành một mạng cloud nhỏ. VPC và subnet cho tôi hiểu ranh giới môi trường, route table giải thích hướng đi của traffic, còn security group thể hiện cách kiểm soát truy cập quanh EC2.
+
+Với AI1, tôi bắt đầu từ tài liệu dataset thay vì train model ngay. CICIDS/CICIDS2018 là ví dụ hữu ích về dữ liệu security dạng flow, nhưng tôi cũng thấy rằng các field của dataset công khai không tự động tương thích với pipeline dựa trên log sau này.
 
 ### Khó khăn & Cách xử lý
-* **Vấn đề gặp phải:** Tôi nhận ra các file `conn.log` thô không thể dùng ngay cho machine learning do chứa các giá trị thiếu (thường ký hiệu bằng `-`) và chuỗi ký tự phân loại.
-* **Cách giải quyết:** Tôi quyết định feature extractor phải xử lý tường minh những vấn đề này. Tôi hình thành tư duy nghiêm ngặt về schema: raw log phải được biến đổi một cách tất định thành một vector số có độ dài cố định trước khi đưa vào mô hình, tạo tiền đề cho file `feature_manifest.json` mà tôi sẽ tạo sau này.
+* **Vấn đề gặp phải:** Tài liệu dataset công khai có nhiều feature, nhưng không phải feature nào cũng khớp rõ với luồng dữ liệu dự kiến của dự án.
+* **Cách giải quyết:** Tôi lập ghi chú so sánh và đánh dấu các field chưa chắc chắn để rà soát sau, không ép schema khớp ngay.
 
 ### Nhận xét cá nhân
-Việc đào sâu vào các file log Zeek thô khiến dự án trở nên thực tế hơn rất nhiều. Tôi nhận ra một mô hình machine learning phụ thuộc hoàn toàn vào chất lượng và cấu trúc của data pipeline. Nắm được cách hạ tầng AWS VPC chủ động định tuyến traffic về các Zeek sensor giúp tôi đánh giá cao mối liên kết chặt chẽ giữa mạng cloud và giám sát bảo mật bằng AI.
+Tuần này làm cho networking trên cloud bớt trừu tượng hơn với tôi. Việc truy cập EC2 phụ thuộc vào thiết kế VPC, routing và security rule, nên security monitoring không thể tách khỏi kiến thức hạ tầng. Ở phần AI1, tôi học được cách đọc tài liệu dataset thận trọng hơn. Một dataset có thể rất nhiều feature nhưng vẫn khó dùng nếu không khớp bối cảnh triển khai.

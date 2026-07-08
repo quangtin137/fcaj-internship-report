@@ -1,38 +1,40 @@
 ---
-title: "Week 12 - Final Demo, Report Completion and Internship Summary"
+title: "Week 12 - Website Report Completion and Internship Summary"
 date: 2026-07-03
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
 {{% notice info %}}
-📋 **Week 12 Worklog** — 03/07/2026 – 10/07/2026
+**Week 12 Worklog** - 03/07/2026 - 09/07/2026
 {{% /notice %}}
 
 ### Weekly Overview
-This final week was the culmination of the 12-week internship. The team executed the live final demonstration of the Hybrid IDS platform, proving its real-time capabilities. I also finalized my technical internship report, summarizing my contributions to the AI1 module.
+The final week was dedicated to polishing the report website and preparing submission materials. I reviewed English and Vietnamese pages for consistency, organized screenshots and evidence, finalized the AI1 methodology narrative, and summarized the internship learning path across AWS, security monitoring, data preprocessing, and experimental ML evaluation.
 
 ### Weekly Objectives
-* Execute the final system demonstration with live Port Scan and Brute Force attack scenarios.
-* Ensure AI1 properly receives all 30 features, processes them, and pushes the output to the Fusion Layer in real-time.
-* Finalize the graduation internship report.
-* Reflect on the transition from learning AWS basics to deploying a containerized machine learning pipeline.
+* Update and proofread the report website pages.
+* Check English/Vietnamese consistency across the Worklog section.
+* Organize screenshots, evidence, and submission materials.
+* Finalize the AI1 methodology and lessons learned without overstating demo results.
 
 ### Daily Writing
 | Day | Date | Time Spent | Work Completed | Result | Issue | Decision | Next Step |
-|---|---|---:|---|---|---|---|---|
-| Day 1 | 03/07/2026 | 5h | Conducted dry runs for the final demo, clearing the SQS queues to ensure a clean state. | Pipeline is verified and ready for live demonstration. | Encountered a minor ECS cold-start delay during the first dry run. | Keep the AI Engine ECS tasks actively running immediately before the demo to avoid latency. | Execute final demo. |
-| Day 2 | 04/07/2026 | 5h | Executed the final live demonstration with the team, launching Nmap and Hydra attacks. | Real-time detection succeeded. AI1 `label`, `confidence`, and `selected_threshold` correctly populated the pipeline. | The Dashboard required manual refresh occasionally. | Explain to the audience that the backend aggregation is near real-time, even if the frontend requires a refresh. | Draft final report. |
-| Day 3 | 06/07/2026 | 6h | Drafted the final sections of the AI1 Network Anomaly Detection internship report. | Compiled the methodology, dataset strategy, feature engineering, and inference integration details. | Needed to ensure the report doesn't claim credit for AI2A or Suricata. | Strictly maintain the AI1 scope boundaries in the final written text. | Review report formatting. |
-| Day 4 | 07/07/2026 | 4h | Reviewed report formatting, corrected typos, and ensured all technical terms (like `conn_dataset` and `fail_if_missing`) were used correctly. | A polished, professional document ready for submission. | No major issue. | Proceed to official submission. | Submit internship report. |
-| Day 5 | 09/07/2026 | 3h | Officially submitted the internship report and conducted a final team retrospective. | Internship formally concluded. | No major issue. | Celebrate the successful completion of the internship. | End of internship. |
+|---|---|---|---|---|---|---|---|
+| Day 1 | 03/07/2026 | 4h | Updated report website pages and checked navigation links. | Improved page consistency across the Worklog section. | Some titles no longer matched the revised timeline. | Align landing pages and weekly titles. | Review bilingual content. |
+| Day 2 | 04/07/2026 | 5h | Reviewed English and Vietnamese Worklog content side by side. | Found wording that needed to be more natural in Vietnamese. | Word-by-word translation made some sentences stiff. | Rewrite by meaning rather than literal translation. | Organize screenshots. |
+| Day 3 | 06/07/2026 | 4h | Organized screenshots and supporting evidence for the report. | Made evidence easier to find during review. | Some screenshots needed context captions. | Add short captions where useful. | Finalize AI1 methodology. |
+| Day 4 | 07/07/2026 | 5h | Finalized the AI1 methodology, data-strategy timeline, and lessons learned. | The report now explained why public datasets came before Zeek. | The conclusion needed confidence without exaggeration. | Avoid claims about a final live detection result. | Prepare submission package. |
+| Day 5 | 08/07/2026 | 3h | Prepared submission materials and performed a final consistency pass. | Reduced mismatch between weekly pages and summary pages. | Small wording issues remained easy to miss. | Use checklist-based review. | Submit after final mentor review. |
 
 ### Technical Implementation
-The primary technical task was ensuring the stability of the final demo. I verified that the SQS queue was purged of old messages to prevent stale data from triggering false alerts. During the live Port Scan and Brute Force scenarios, I monitored the logs of the AI1 container. I explicitly checked that the input payloads contained all 30 features, allowing AI1 to bypass the `fail_if_missing` block. I observed the `anomaly_score` crossing the frozen `0.398066` threshold, successfully generating `ANOMALY` labels that seamlessly integrated into the Fusion Layer to trigger the final Dashboard alerts. Following the demo, I finalized my internship report, ensuring it accurately reflected the Zeek-first dataset strategy, the Isolation Forest feature engineering, and the strict schema contracts I established.
+Most technical work this week was documentation-oriented. I checked whether the website presented the same timeline across landing pages, weekly pages, methodology notes, and evidence sections.
+
+For AI1, the final narrative emphasized the actual sequence: public dataset exploration first, Zeek transition in Week 7, then Zeek-based preprocessing and experimental evaluation. I avoided wording that would make the system sound more finalized than the evidence supported.
 
 ### Challenges & Solutions
-* **Challenge:** During dry runs, keeping the entire pipeline synchronized was stressful; if the Feature Router dropped a field, AI1 would reject the message entirely, potentially ruining the live demo.
-* **Solution:** The rigorous schema consistency we established in Week 6 and 7 saved the day. Because the contracts were strict, any errors appeared immediately during the dry runs, allowing us to patch the upstream router quickly. By the time the live demo occurred, the pipeline was rock-solid.
+* **Challenge:** The final report needed to sound complete as a submission while staying honest about experimental parts.
+* **Solution:** I focused on completed documentation, organized evidence, and lessons learned instead of claiming a final live detection result.
 
 ### Internship Reflection
-Reaching the finish line of this 12-week journey is incredibly fulfilling. I transitioned from learning basic AWS concepts to owning a critical AI component in a complex, cloud-native security pipeline. Tracing a network packet from a live attack, through Zeek, into a 30-feature vector, evaluated by my Isolation Forest, and ending up as a high-risk alert on a Dashboard was a profoundly rewarding experience. This internship has solidified my passion for the intersection of Cloud Computing, Data Engineering, and Artificial Intelligence.
+The final week made me look back at the internship as a connected learning path. AWS services gave me the infrastructure context, public datasets taught me what can go wrong with mismatched data, and Zeek helped bring AI1 closer to the expected pipeline. The report work also taught me that writing is part of technical responsibility. A careful summary can show progress without pretending everything is finished.

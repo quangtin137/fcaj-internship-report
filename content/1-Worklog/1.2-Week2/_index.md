@@ -1,37 +1,39 @@
 ---
-title: "Week 2 - Zeek Lab Setup and conn.log Schema Study"
+title: "Week 2 - AWS VPC/EC2 Practice and Public Dataset Exploration"
 date: 2026-04-24
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
 {{% notice info %}}
-📋 **Week 2 Worklog** — 24/04/2026 – 30/04/2026
+**Week 2 Worklog** - 24/04/2026 - 30/04/2026
 {{% /notice %}}
 
 ### Weekly Overview
-This week, I focused on the infrastructure necessary for generating our primary ML telemetry. I studied the security monitoring lab setup and deeply analyzed the Zeek `conn.log` schema to understand the raw network features I would be working with.
+Week 2 moved from onboarding into basic AWS networking practice. I reviewed VPC, subnet, route table, security group, EC2, SSH, and IAM Role concepts while also starting a public cybersecurity dataset survey. The AI1 work was still exploratory, centered on understanding CICIDS/CICIDS2018 metadata, labels, and feature meanings.
 
 ### Weekly Objectives
-* Understand the security monitoring lab environment on AWS (VPC, EC2).
-* Study the Zeek `conn.log` schema and analyze the `conn_dataset`.
-* Design the initial feature schema for the AI1 network-level model.
-* Recognize the difference between raw logs, processed features, and model input.
+* Review the relationship between VPC, subnet, route table, and security group.
+* Launch or inspect an EC2 instance and connect through SSH safely.
+* Read CICIDS/CICIDS2018 dataset descriptions, labels, and attack categories.
+* Create a first comparison note between public dataset fields and AI1's anomaly detection need.
 
 ### Daily Writing
 | Day | Date | Time Spent | Work Completed | Result | Issue | Decision | Next Step |
-|---|---|---:|---|---|---|---|---|
-| Day 1 | 24/04/2026 | 5h | Reviewed the lab's VPC and EC2 setups to understand where Zeek captures traffic. | Understood the network topology generating the data. | Needed to isolate Zeek logs from standard system logs. | Focus only on Zeek `conn.log` outputs in the S3 bucket. | Study `conn.log` fields. |
-| Day 2 | 25/04/2026 | 4h | Read Zeek documentation regarding `conn.log` fields (duration, orig_bytes, resp_bytes, conn_state). | Identified foundational flow-level features. | Some fields like `conn_state` are categorical. | Plan to encode categorical connection states in the feature extractor. | Analyze raw `conn_dataset`. |
-| Day 3 | 27/04/2026 | 6h | Explored a sample `conn_dataset` to see realistic value distributions. | Noticed missing values represented as hyphens ('-'). | Missing values would break ML inference. | Adopt a `fail_if_missing` policy for required fields, but implement robust parsing for hyphens. | Draft the AI1 feature schema. |
-| Day 4 | 28/04/2026 | 4h | Designed the initial AI1 feature schema separating basic flow features from protocol flags. | Created a structured plan for the feature extractor. | Risk of schema inconsistency between training and serving. | Ensure the feature extractor code is strictly shared between the train and inference pipelines. | Prepare for normal traffic collection. |
+|---|---|---|---|---|---|---|---|
+| Day 1 | 24/04/2026 | 4h | Reviewed VPC, subnet, route table, and security group concepts. | Understood how network isolation is represented in AWS. | Some routing concepts were easy to mix up at first. | Draw a small VPC diagram before changing settings. | Practice EC2 access next. |
+| Day 2 | 25/04/2026 | 4h | Launched or inspected an EC2 instance and reviewed SSH access requirements. | Connected the AWS networking theory with a real compute resource. | Security group inbound rules needed careful checking. | Allow only the required SSH access for the lab context. | Move to public dataset reading. |
+| Day 3 | 27/04/2026 | 5h | Read CICIDS/CICIDS2018 metadata, label descriptions, and attack categories. | Built a first understanding of the dataset structure. | The dataset has many engineered flow features whose origin is not always obvious. | Record unclear fields instead of assuming they map to the project pipeline. | Compare features with AI1 needs. |
+| Day 4 | 28/04/2026 | 4h | Compared public dataset fields with a network anomaly detection use case. | Noted that public dataset labels are useful for learning but may not fit serving-time logs. | Feature definitions differed from the log-based direction the project might use later. | Keep public datasets as exploration material, not final pipeline input. | Continue with storage and preprocessing in Week 3. |
 
 ### Technical Implementation
-I studied the security lab environment, familiarizing myself with how VPC and EC2 configurations support the log collection pipeline. My primary technical work involved dissecting the Zeek `conn.log` structure. I began observing basic flow features like `duration`, `orig_bytes`, `resp_bytes`, `orig_pkts`, and `resp_pkts`. I also noted protocol flags (`proto`, `service`) and connection states (`conn_state`). I recognized early on that a strong feature extractor must be built to parse these raw logs consistently, as maintaining schema consistency is the only way to prevent train-serving mismatch when the model goes into production.
+The AWS work centered on how a small cloud network is assembled. VPC and subnet concepts gave me the boundary of the environment, route tables explained traffic direction, and security groups showed how access rules are enforced around EC2.
+
+For AI1, I began with dataset documentation instead of model training. CICIDS/CICIDS2018 provided useful examples of flow-based security data, but I also noticed that public dataset fields are not automatically compatible with a future log-based pipeline.
 
 ### Challenges & Solutions
-* **Challenge:** I realized that raw `conn.log` files are not immediately usable by machine learning models due to missing values (often denoted by `-`) and categorical strings.
-* **Solution:** I decided that our feature extractor must handle these explicitly. I established a strict schema mindset: raw logs must be deterministically transformed into a fixed-length numeric vector before hitting the model, preparing a foundation for the `feature_manifest.json` I will create later.
+* **Challenge:** Public dataset documentation had many feature names, but not all of them mapped cleanly to the project's expected data flow.
+* **Solution:** I created a comparison note and marked uncertain fields for later review instead of forcing a schema match.
 
 ### Internship Reflection
-Diving into the raw Zeek logs made the project feel much more real. I realized that a machine learning model is completely dependent on the quality and structure of its data pipeline. Learning how the AWS VPC infrastructure actively routes traffic to our Zeek sensors gave me a greater appreciation for the relationship between cloud networking and AI security monitoring.
+This week made cloud networking feel less abstract. EC2 access depends on VPC design, routing, and security rules, so security monitoring cannot be separated from infrastructure knowledge. On the AI1 side, I learned to read dataset documentation with caution. A dataset can look rich but still be difficult to use if its features do not match the deployment context.

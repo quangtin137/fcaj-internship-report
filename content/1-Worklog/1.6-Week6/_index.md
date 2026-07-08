@@ -1,38 +1,40 @@
 ---
-title: "Week 6 - AI1 Evaluation and Artifact Freezing"
+title: "Week 6 - Security Monitoring Services and Data Strategy Revision"
 date: 2026-05-22
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
 {{% notice info %}}
-📋 **Week 6 Worklog** — 22/05/2026 – 28/05/2026
+**Week 6 Worklog** - 22/05/2026 - 28/05/2026
 {{% /notice %}}
 
 ### Weekly Overview
-This week was a critical milestone. I evaluated the AI1 model using standard metrics, froze the optimal decision threshold, and finalized the technical artifacts required for downstream deployment.
+Week 6 was the point where the public dataset limitations became a concrete data-strategy discussion. I studied VPC Flow Logs, GuardDuty, and Security Hub to understand AWS-native security monitoring, then summarized why CICIDS/CICIDS2018 did not fit AI1 well enough for the expected pipeline. The conclusion was to move toward a log source closer to real project telemetry.
 
 ### Weekly Objectives
-* Evaluate AI1 using metrics like False Positive Rate and Detection Rate.
-* Define and freeze the decision threshold for the `NORMAL`/`ANOMALY` output.
-* Standardize AI1 artifacts (`model_card.md`, `feature_manifest.json`, `thresholds_frozen.json`).
-* Dump the model and preprocessor for the inference environment.
+* Study VPC Flow Logs and what network metadata they provide.
+* Review GuardDuty and Security Hub roles in AWS security monitoring.
+* Summarize CICIDS/CICIDS2018 schema, feature, and label limitations.
+* Draft the expected AI1 artifact list and recommend the next data direction.
 
 ### Daily Writing
 | Day | Date | Time Spent | Work Completed | Result | Issue | Decision | Next Step |
-|---|---|---:|---|---|---|---|---|
-| Day 1 | 22/05/2026 | 5h | Evaluated the AI1 model using the labeled attack dataset to calculate False Positive Rate and Detection Rate. | Identified the trade-off curve between catching attacks and causing alert fatigue. | Needed to select a definitive operating point. | Select a threshold that heavily penalizes false positives, as Fusion Layer relies on clean evidence. | Freeze the decision threshold. |
-| Day 2 | 23/05/2026 | 4h | Participated in AWS Vietnam Community Day and noted sessions about AI context, CloudFront, Amazon Quick, LLM non-determinism, and multi-agent systems. | Expanded my understanding of AI and AWS use cases beyond the AI1 model. | Needed to avoid mixing event notes with core AI1 implementation details. | Keep detailed event content in Event Participated and mention only learning impact in Worklog. | Review which lessons can support future AI/security architecture reflection. |
-| Day 3 | 25/05/2026 | 4h | Froze the threshold at `0.398066` and documented the decision rule. | Established `if confidence >= 0.398066 => ANOMALY`. | Need to ensure downstream apps use the exact same threshold. | Store the threshold in `thresholds_frozen.json` to be loaded dynamically. | Generate feature manifest. |
-| Day 4 | 26/05/2026 | 4h | Created the `feature_manifest.json` outlining the exact 30-feature order. | Guaranteed schema consistency between training and inference. | Inference code might crash if a feature is missing. | Document the `fail_if_missing` policy explicitly in the model card. | Dump joblib artifacts. |
-| Day 5 | 27/05/2026 | 5h | Exported `model.joblib`, `preprocessor.joblib`, and generated `smoke_samples.jsonl`. | Completed the `AI1_ISOLATION_FOREST_V1` artifact package. | Considered ONNX but opted to stick with `joblib` for now based on current runtime compatibility. | Prepare for integration testing with the joblib artifacts. | Prepare for SQS integration. |
+|---|---|---|---|---|---|---|---|
+| Day 1 | 22/05/2026 | 4h | Studied VPC Flow Logs fields and use cases. | Understood another AWS source of network-level evidence. | Flow Logs are not the same as Zeek and have different detail levels. | Keep service comparisons factual. | Review GuardDuty and Security Hub. |
+| Day 2 | 23/05/2026 | 4h | Read GuardDuty and Security Hub overview material. | Learned how managed findings can support security monitoring. | Managed findings do not replace AI1's anomaly score. | Treat them as separate evidence sources. | Summarize dataset experiment issues. |
+| Day 3 | 25/05/2026 | 5h | Collected notes from CICIDS/CICIDS2018 preprocessing and model trials. | Grouped issues into schema mismatch, feature mismatch, and label difficulty. | The same issue appeared in several forms across experiments. | Write the limitation summary by cause, not by notebook. | Discuss data direction. |
+| Day 4 | 26/05/2026 | 4h | Discussed why a log source closer to the project pipeline was needed. | Reached a clearer rationale for moving toward Zeek conn.log. | The change needed to be presented as a technical adjustment, not a sudden restart. | Frame it as reducing train-serving mismatch. | Draft artifact expectations. |
+| Day 5 | 27/05/2026 | 3h | Drafted an expected AI1 artifact and data-direction note. | Prepared the transition point for Week 7. | Artifacts were only planned, not finalized. | Use planned/expected wording in the report. | Start Zeek schema study next week. |
 
 ### Technical Implementation
-I evaluated the `AI1_ISOLATION_FOREST_V1` model, focusing heavily on minimizing the False Positive Rate. I analyzed the score distribution and officially froze the `selected_threshold = 0.398066`. The decision rule is strictly defined: `confidence >= 0.398066` outputs `ANOMALY`, while anything lower is `NORMAL`, adhering to the `higher_is_more_anomalous` score direction. I finalized the deployment package by creating `feature_manifest.json` (locking in the 30 features), `thresholds_frozen.json`, and exporting `model.joblib` and `preprocessor.joblib`. I also wrote the `model_card.md` to document the model's objective, scope (`ZEEK_CONN_FLOW_ANOMALY_FEATURES`), and the `fail_if_missing` data policy. Finally, I created `smoke_samples.jsonl` to allow downstream engineers to test their integrations easily.
+VPC Flow Logs, GuardDuty, and Security Hub helped me separate different types of security evidence. AWS can provide network metadata and managed findings, but AI1 still needs a consistent feature source for model training and evaluation.
+
+The dataset review ended with a practical concern: train-serving mismatch. A model trained on public dataset features may not behave well if deployment later serves a different log format. This was the reason for recommending Zeek conn.log as the next direction.
 
 ### Challenges & Solutions
-* **Challenge:** Ensuring the inference environment executes exactly the same preprocessing and ordering as the training environment is a notoriously difficult MLOps problem.
-* **Solution:** By freezing the `feature_manifest.json` and exporting the `preprocessor.joblib` alongside the model, I decoupled the logic from my training notebook. The inference script will strictly read the manifest to enforce column ordering and apply the preprocessor, virtually eliminating train-serving schema mismatch.
+* **Challenge:** The largest risk was training on one feature definition and serving on another.
+* **Solution:** I summarized the mismatch clearly and wrote the Zeek direction as a recommendation rather than a completed migration.
 
 ### Internship Reflection
-Attending the AWS Vietnam Community Day expanded my perspective on cloud AI architectures, while my daily tasks required extreme detail-orientation. Freezing the artifacts and documenting the model card felt like a transition from "experimentation" to "engineering." AI1 is no longer just a script on my laptop; it is a versioned, strictly contracted microservice component ready for pipeline integration.
+This week helped me understand why changing data strategy can be a responsible technical decision. The public dataset work was not wasted; it revealed what would go wrong if the team ignored serving-time data. AWS security services also showed that monitoring platforms combine many evidence types. AI1 needs to fit into that ecosystem instead of pretending one dataset solves everything.
