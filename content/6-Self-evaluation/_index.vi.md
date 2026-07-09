@@ -16,7 +16,7 @@ Thông qua các hoạt động này, tôi cải thiện kiến thức nền tả
 
 | STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
 | --- | --- | --- | --- | --- | --- |
-| 1 | **Kiến thức và kỹ năng chuyên môn** | Hiểu và áp dụng kiến thức AWS/cloud vào các nhiệm vụ kỹ thuật, đảm bảo chất lượng công việc | ✅ | ☐ | ☐ |
+| 1 | **Kiến thức và kỹ năng chuyên môn** | Hiểu và áp dụng kiến thức AWS/cloud vào các nhiệm vụ kỹ thuật, đảm bảo chất lượng công việc | ☐ | ✅ | ☐ |
 | 2 | **Khả năng học hỏi** | Tiếp thu công cụ, khái niệm và quy trình mới liên quan đến cloud, security monitoring và phân tích dữ liệu | ✅ | ☐ | ☐ |
 | 3 | **Sự chủ động** | Chủ động tìm hiểu, tài liệu hóa và theo dõi công việc khi yêu cầu chưa thật sự rõ ràng | ☐ | ✅ | ☐ |
 | 4 | **Tinh thần trách nhiệm** | Hoàn thành nhiệm vụ được giao, duy trì nội dung báo cáo và theo sát phần việc của bản thân | ✅ | ☐ | ☐ |

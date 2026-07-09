@@ -16,7 +16,7 @@ To reflect on my internship period more objectively, I evaluate myself based on 
 
 | No. | Criteria | Description | Good | Fair | Average |
 | --- | --- | --- | --- | --- | --- |
-| 1 | **Professional knowledge & skills** | Understanding AWS/cloud concepts, applying technical knowledge to project tasks, and producing reliable work results | ✅ | ☐ | ☐ |
+| 1 | **Professional knowledge & skills** | Understanding AWS/cloud concepts, applying technical knowledge to project tasks, and producing reliable work results | ☐ | ✅ | ☐ |
 | 2 | **Ability to learn** | Learning new tools, concepts, and workflows related to cloud, security monitoring, and data analysis | ✅ | ☐ | ☐ |
 | 3 | **Proactiveness** | Taking initiative in research, documentation, and task follow-up when requirements are not fully clear | ☐ | ✅ | ☐ |
 | 4 | **Sense of responsibility** | Completing assigned work, maintaining report content, and following up on project responsibilities | ✅ | ☐ | ☐ |
