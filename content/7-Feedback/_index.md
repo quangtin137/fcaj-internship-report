@@ -10,7 +10,7 @@ This section presents my personal feedback after participating in the AWS FCAJ C
 
 ### 1. Working Environment
 
-The FCJ working environment was open, supportive, and suitable for interns who wanted to learn more about AWS and cloud-related work. The program encouraged self-learning while still providing guidance when needed, which helped me become more responsible for my own progress.
+The FCAJ working environment was open, supportive, and suitable for interns who wanted to learn more about AWS and cloud-related work. The program encouraged self-learning while still providing guidance when needed, which helped me become more responsible for my own progress.
 
 ### 2. Support from Mentor / Team Admin
 

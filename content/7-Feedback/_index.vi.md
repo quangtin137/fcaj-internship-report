@@ -10,7 +10,7 @@ Phần này trình bày chia sẻ cá nhân của tôi sau khi tham gia chương
 
 ### 1. Môi trường làm việc
 
-Môi trường FCJ cởi mở, hỗ trợ tốt và phù hợp với sinh viên thực tập muốn tìm hiểu thêm về AWS và các công việc liên quan đến cloud. Chương trình khuyến khích tinh thần tự học nhưng vẫn có định hướng khi cần thiết, nhờ đó tôi có trách nhiệm hơn với tiến độ và kết quả học tập của bản thân.
+Môi trường FCAJ cởi mở, hỗ trợ tốt và phù hợp với sinh viên thực tập muốn tìm hiểu thêm về AWS và các công việc liên quan đến cloud. Chương trình khuyến khích tinh thần tự học nhưng vẫn có định hướng khi cần thiết, nhờ đó tôi có trách nhiệm hơn với tiến độ và kết quả học tập của bản thân.
 
 ### 2. Sự hỗ trợ của mentor / team admin
 
