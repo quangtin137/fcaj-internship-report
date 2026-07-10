@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-**On this page**, I document my 12-week internship journey as an FCJ Cloud Intern. The worklog follows my main role as **AI1 - Network Anomaly Detection** in the AI-Powered Multi-Model Hybrid Cloud Security Monitoring Platform project, while keeping the timeline aligned with the actual learning and implementation process.
+**On this page**, I document my 12-week internship journey as an FCAJ Cloud Intern. The worklog follows my main role as **AI1 - Network Anomaly Detection** in the AI-Powered Multi-Model Hybrid Cloud Security Monitoring Platform project, while keeping the timeline aligned with the actual learning and implementation process.
 
 The first half of the internship focused on AWS fundamentals and public cybersecurity dataset exploration, especially CICIDS/CICIDS2018 and early Isolation Forest experiments. From Week 7 onward, the AI1 direction transitioned to Zeek `conn.log`, Zeek-based feature extraction, experimental evaluation, threshold review, technical documentation, and website report completion.
 

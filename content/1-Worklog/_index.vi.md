@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-**Trong trang này**, tôi ghi chép lại hành trình 12 tuần thực tập với vị trí FCJ Cloud Intern. Nhật ký bám theo vai trò chính của tôi là **AI1 - Network Anomaly Detection** trong dự án AI-Powered Multi-Model Hybrid Cloud Security Monitoring Platform, đồng thời mapping lại timeline cho đúng với quá trình học, thử nghiệm và triển khai thực tế.
+**Trong trang này**, tôi ghi chép lại hành trình 12 tuần thực tập với vị trí FCAJ Cloud Intern. Nhật ký bám theo vai trò chính của tôi là **AI1 - Network Anomaly Detection** trong dự án AI-Powered Multi-Model Hybrid Cloud Security Monitoring Platform, đồng thời mapping lại timeline cho đúng với quá trình học, thử nghiệm và triển khai thực tế.
 
 Nửa đầu kỳ thực tập tập trung vào nền tảng AWS và khảo sát dataset an ninh mạng công khai, đặc biệt là CICIDS/CICIDS2018 cùng các thử nghiệm Isolation Forest ban đầu. Từ Tuần 7 trở đi, hướng AI1 chuyển sang Zeek `conn.log`, trích xuất đặc trưng dựa trên Zeek, đánh giá ở mức thử nghiệm, rà soát threshold, chuẩn bị tài liệu kỹ thuật và hoàn thiện website report.
 
